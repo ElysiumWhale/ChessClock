@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DD62554A83800A44984 /* ChessClockApp.swift */; };
+		A7A72DD92554A83800A44984 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DD82554A83800A44984 /* ContentView.swift */; };
+		A7A72DDB2554A83B00A44984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A72DDA2554A83B00A44984 /* Assets.xcassets */; };
+		A7A72DDE2554A83B00A44984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A72DDD2554A83B00A44984 /* Preview Assets.xcassets */; };
+		A7A72DE92554A83B00A44984 /* ChessClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DE82554A83B00A44984 /* ChessClockTests.swift */; };
+		A7A72DF42554A83B00A44984 /* ChessClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DF32554A83B00A44984 /* ChessClockUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7A72DE52554A83B00A44984 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7A72DCB2554A83800A44984 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7A72DD22554A83800A44984;
+			remoteInfo = ChessClock;
+		};
+		A7A72DF02554A83B00A44984 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7A72DCB2554A83800A44984 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7A72DD22554A83800A44984;
+			remoteInfo = ChessClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7A72DD32554A83800A44984 /* ChessClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A72DD62554A83800A44984 /* ChessClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockApp.swift; sourceTree = "<group>"; };
+		A7A72DD82554A83800A44984 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7A72DDA2554A83B00A44984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7A72DDD2554A83B00A44984 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7A72DDF2554A83B00A44984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A72DE42554A83B00A44984 /* ChessClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A72DE82554A83B00A44984 /* ChessClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockTests.swift; sourceTree = "<group>"; };
+		A7A72DEA2554A83B00A44984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A72DEF2554A83B00A44984 /* ChessClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A72DF32554A83B00A44984 /* ChessClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockUITests.swift; sourceTree = "<group>"; };
+		A7A72DF52554A83B00A44984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7A72DD02554A83800A44984 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A72DE12554A83B00A44984 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A72DEC2554A83B00A44984 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7A72DCA2554A83800A44984 = {
+			isa = PBXGroup;
+			children = (
+				A7A72DD52554A83800A44984 /* ChessClock */,
+				A7A72DE72554A83B00A44984 /* ChessClockTests */,
+				A7A72DF22554A83B00A44984 /* ChessClockUITests */,
+				A7A72DD42554A83800A44984 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7A72DD42554A83800A44984 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7A72DD32554A83800A44984 /* ChessClock.app */,
+				A7A72DE42554A83B00A44984 /* ChessClockTests.xctest */,
+				A7A72DEF2554A83B00A44984 /* ChessClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7A72DD52554A83800A44984 /* ChessClock */ = {
+			isa = PBXGroup;
+			children = (
+				A7A72DD62554A83800A44984 /* ChessClockApp.swift */,
+				A7A72DD82554A83800A44984 /* ContentView.swift */,
+				A7A72DDA2554A83B00A44984 /* Assets.xcassets */,
+				A7A72DDF2554A83B00A44984 /* Info.plist */,
+				A7A72DDC2554A83B00A44984 /* Preview Content */,
+			);
+			path = ChessClock;
+			sourceTree = "<group>";
+		};
+		A7A72DDC2554A83B00A44984 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A7A72DDD2554A83B00A44984 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7A72DE72554A83B00A44984 /* ChessClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7A72DE82554A83B00A44984 /* ChessClockTests.swift */,
+				A7A72DEA2554A83B00A44984 /* Info.plist */,
+			);
+			path = ChessClockTests;
+			sourceTree = "<group>";
+		};
+		A7A72DF22554A83B00A44984 /* ChessClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7A72DF32554A83B00A44984 /* ChessClockUITests.swift */,
+				A7A72DF52554A83B00A44984 /* Info.plist */,
+			);
+			path = ChessClockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7A72DD22554A83800A44984 /* ChessClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A72DF82554A83B00A44984 /* Build configuration list for PBXNativeTarget "ChessClock" */;
+			buildPhases = (
+				A7A72DCF2554A83800A44984 /* Sources */,
+				A7A72DD02554A83800A44984 /* Frameworks */,
+				A7A72DD12554A83800A44984 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChessClock;
+			productName = ChessClock;
+			productReference = A7A72DD32554A83800A44984 /* ChessClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7A72DE32554A83B00A44984 /* ChessClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A72DFB2554A83B00A44984 /* Build configuration list for PBXNativeTarget "ChessClockTests" */;
+			buildPhases = (
+				A7A72DE02554A83B00A44984 /* Sources */,
+				A7A72DE12554A83B00A44984 /* Frameworks */,
+				A7A72DE22554A83B00A44984 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7A72DE62554A83B00A44984 /* PBXTargetDependency */,
+			);
+			name = ChessClockTests;
+			productName = ChessClockTests;
+			productReference = A7A72DE42554A83B00A44984 /* ChessClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7A72DEE2554A83B00A44984 /* ChessClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A72DFE2554A83B00A44984 /* Build configuration list for PBXNativeTarget "ChessClockUITests" */;
+			buildPhases = (
+				A7A72DEB2554A83B00A44984 /* Sources */,
+				A7A72DEC2554A83B00A44984 /* Frameworks */,
+				A7A72DED2554A83B00A44984 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7A72DF12554A83B00A44984 /* PBXTargetDependency */,
+			);
+			name = ChessClockUITests;
+			productName = ChessClockUITests;
+			productReference = A7A72DEF2554A83B00A44984 /* ChessClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7A72DCB2554A83800A44984 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					A7A72DD22554A83800A44984 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					A7A72DE32554A83B00A44984 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = A7A72DD22554A83800A44984;
+					};
+					A7A72DEE2554A83B00A44984 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = A7A72DD22554A83800A44984;
+					};
+				};
+			};
+			buildConfigurationList = A7A72DCE2554A83800A44984 /* Build configuration list for PBXProject "ChessClock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7A72DCA2554A83800A44984;
+			productRefGroup = A7A72DD42554A83800A44984 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7A72DD22554A83800A44984 /* ChessClock */,
+				A7A72DE32554A83B00A44984 /* ChessClockTests */,
+				A7A72DEE2554A83B00A44984 /* ChessClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7A72DD12554A83800A44984 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A72DDE2554A83B00A44984 /* Preview Assets.xcassets in Resources */,
+				A7A72DDB2554A83B00A44984 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A72DE22554A83B00A44984 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A72DED2554A83B00A44984 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7A72DCF2554A83800A44984 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A72DD92554A83800A44984 /* ContentView.swift in Sources */,
+				A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A72DE02554A83B00A44984 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A72DE92554A83B00A44984 /* ChessClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A72DEB2554A83B00A44984 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A72DF42554A83B00A44984 /* ChessClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7A72DE62554A83B00A44984 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7A72DD22554A83800A44984 /* ChessClock */;
+			targetProxy = A7A72DE52554A83B00A44984 /* PBXContainerItemProxy */;
+		};
+		A7A72DF12554A83B00A44984 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7A72DD22554A83800A44984 /* ChessClock */;
+			targetProxy = A7A72DF02554A83B00A44984 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A7A72DF62554A83B00A44984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7A72DF72554A83B00A44984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7A72DF92554A83B00A44984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ChessClock/Preview Content\"";
+				DEVELOPMENT_TEAM = 235K7U278B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ChessClock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = elysium.ChessClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7A72DFA2554A83B00A44984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ChessClock/Preview Content\"";
+				DEVELOPMENT_TEAM = 235K7U278B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ChessClock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = elysium.ChessClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7A72DFC2554A83B00A44984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 235K7U278B;
+				INFOPLIST_FILE = ChessClockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = elysium.ChessClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChessClock.app/ChessClock";
+			};
+			name = Debug;
+		};
+		A7A72DFD2554A83B00A44984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 235K7U278B;
+				INFOPLIST_FILE = ChessClockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = elysium.ChessClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChessClock.app/ChessClock";
+			};
+			name = Release;
+		};
+		A7A72DFF2554A83B00A44984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 235K7U278B;
+				INFOPLIST_FILE = ChessClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = elysium.ChessClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChessClock;
+			};
+			name = Debug;
+		};
+		A7A72E002554A83B00A44984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 235K7U278B;
+				INFOPLIST_FILE = ChessClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = elysium.ChessClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChessClock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7A72DCE2554A83800A44984 /* Build configuration list for PBXProject "ChessClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A72DF62554A83B00A44984 /* Debug */,
+				A7A72DF72554A83B00A44984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A72DF82554A83B00A44984 /* Build configuration list for PBXNativeTarget "ChessClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A72DF92554A83B00A44984 /* Debug */,
+				A7A72DFA2554A83B00A44984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A72DFB2554A83B00A44984 /* Build configuration list for PBXNativeTarget "ChessClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A72DFC2554A83B00A44984 /* Debug */,
+				A7A72DFD2554A83B00A44984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A72DFE2554A83B00A44984 /* Build configuration list for PBXNativeTarget "ChessClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A72DFF2554A83B00A44984 /* Debug */,
+				A7A72E002554A83B00A44984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7A72DCB2554A83800A44984 /* Project object */;
+}
