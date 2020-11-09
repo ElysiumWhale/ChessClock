@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A76142422559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
+		A76142432559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
+		A76142442559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
+		A768380B2559E0860017E669 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768380A2559E0860017E669 /* TimerButton.swift */; };
+		A768380C2559E0860017E669 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768380A2559E0860017E669 /* TimerButton.swift */; };
+		A768380D2559E0860017E669 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768380A2559E0860017E669 /* TimerButton.swift */; };
+		A76838132559E5CD0017E669 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopWatchManager.swift */; };
+		A76838142559E5CD0017E669 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopWatchManager.swift */; };
+		A76838152559E5CD0017E669 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopWatchManager.swift */; };
 		A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DD62554A83800A44984 /* ChessClockApp.swift */; };
 		A7A72DD92554A83800A44984 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DD82554A83800A44984 /* ContentView.swift */; };
 		A7A72DDB2554A83B00A44984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A72DDA2554A83B00A44984 /* Assets.xcassets */; };
 		A7A72DDE2554A83B00A44984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A72DDD2554A83B00A44984 /* Preview Assets.xcassets */; };
 		A7A72DE92554A83B00A44984 /* ChessClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DE82554A83B00A44984 /* ChessClockTests.swift */; };
 		A7A72DF42554A83B00A44984 /* ChessClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DF32554A83B00A44984 /* ChessClockUITests.swift */; };
+		A7A72E0C25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
+		A7A72E0D25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
+		A7A72E0E25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
+		A7A72E3825560FD200A44984 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A72E3725560FD200A44984 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A76142412559C23E00E8D54F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		A768380A2559E0860017E669 /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
+		A76838122559E5CD0017E669 /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
 		A7A72DD32554A83800A44984 /* ChessClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A72DD62554A83800A44984 /* ChessClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockApp.swift; sourceTree = "<group>"; };
 		A7A72DD82554A83800A44984 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +61,9 @@
 		A7A72DEF2554A83B00A44984 /* ChessClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A72DF32554A83B00A44984 /* ChessClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockUITests.swift; sourceTree = "<group>"; };
 		A7A72DF52554A83B00A44984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A72E0B25560A7800A44984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7A72E1225560C1200A44984 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A7A72E3725560FD200A44984 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A72E3825560FD200A44984 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +92,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41A3120B801DA5769EDF4C7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7A72E3725560FD200A44984 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A76142372559C11F00E8D54F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A76142412559C23E00E8D54F /* ClockView.swift */,
+				A768380A2559E0860017E669 /* TimerButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A76838112559E5A40017E669 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A76838122559E5CD0017E669 /* StopWatchManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A7A72DCA2554A83800A44984 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +124,7 @@
 				A7A72DE72554A83B00A44984 /* ChessClockTests */,
 				A7A72DF22554A83B00A44984 /* ChessClockUITests */,
 				A7A72DD42554A83800A44984 /* Products */,
+				41A3120B801DA5769EDF4C7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,10 +141,14 @@
 		A7A72DD52554A83800A44984 /* ChessClock */ = {
 			isa = PBXGroup;
 			children = (
+				A76838112559E5A40017E669 /* Model */,
+				A76142372559C11F00E8D54F /* View */,
 				A7A72DD62554A83800A44984 /* ChessClockApp.swift */,
 				A7A72DD82554A83800A44984 /* ContentView.swift */,
+				A7A72E0B25560A7800A44984 /* AppDelegate.swift */,
 				A7A72DDA2554A83B00A44984 /* Assets.xcassets */,
 				A7A72DDF2554A83B00A44984 /* Info.plist */,
+				A7A72E1225560C1200A44984 /* GoogleService-Info.plist */,
 				A7A72DDC2554A83B00A44984 /* Preview Content */,
 			);
 			path = ChessClock;
@@ -259,7 +309,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A72E0C25560A7800A44984 /* AppDelegate.swift in Sources */,
+				A76838132559E5CD0017E669 /* StopWatchManager.swift in Sources */,
+				A76142422559C23E00E8D54F /* ClockView.swift in Sources */,
 				A7A72DD92554A83800A44984 /* ContentView.swift in Sources */,
+				A768380B2559E0860017E669 /* TimerButton.swift in Sources */,
 				A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +322,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A72E0D25560A7800A44984 /* AppDelegate.swift in Sources */,
+				A76838142559E5CD0017E669 /* StopWatchManager.swift in Sources */,
+				A768380C2559E0860017E669 /* TimerButton.swift in Sources */,
+				A76142432559C23E00E8D54F /* ClockView.swift in Sources */,
 				A7A72DE92554A83B00A44984 /* ChessClockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +334,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A72E0E25560A7800A44984 /* AppDelegate.swift in Sources */,
+				A76838152559E5CD0017E669 /* StopWatchManager.swift in Sources */,
+				A768380D2559E0860017E669 /* TimerButton.swift in Sources */,
+				A76142442559C23E00E8D54F /* ClockView.swift in Sources */,
 				A7A72DF42554A83B00A44984 /* ChessClockUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -402,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -427,7 +489,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = elysium.ChessClock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elysium.ChessClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,7 +511,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = elysium.ChessClock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elysium.ChessClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
