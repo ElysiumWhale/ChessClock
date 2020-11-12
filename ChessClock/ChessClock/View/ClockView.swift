@@ -1,16 +1,23 @@
 import SwiftUI
 
 struct ClockView: View {
-    var manager: StopWatchManager = StopWatchManager()
+    @ObservedObject var manager: StopWatchManager = StopWatchManager()
     
     var body: some View {
         ZStack {
             VStack {
                 WorkTimeView(manager: manager).ignoresSafeArea()
+                    .gesture(TapGesture().onEnded { manager.switchTimer() })
                 Spacer(minLength: 0)
                 RestTimeView(manager: manager)
+                    .gesture(TapGesture().onEnded { manager.switchTimer() })
             }
-            TimerButton(text: "Start", action: manager.start)
+            if manager.mode == .stopped {
+                TimerButton(text: "Start", action: manager.start, color: Color(.cyan))
+            }
+            if manager.mode == .running {
+                TimerButton(text: "Stop", action: manager.stop, color: Color(.red))
+            }
         }
     }
 }
@@ -22,28 +29,28 @@ struct ClockView_Previews: PreviewProvider {
 }
 
 struct WorkTimeView: View {
-    //var time: String = "00:00:00"
-    var manager: StopWatchManager
+    @ObservedObject var manager: StopWatchManager
+    var color: Color = SettingsManager.shared.workColor
     
     var body: some View {
         ZStack {
-            Color.purple
+            color
             VStack(alignment:.center) {
-                Text(String(format: "%.1f", manager.secondsElapsed)).font(.largeTitle)
+                Text(String(format: "%.1f", manager.workSeconds)).font(.largeTitle)
             }
         }
     }
 }
 
 struct RestTimeView: View {
-    //var time: String = "00:00:00"
-    var manager: StopWatchManager
+    @ObservedObject var manager: StopWatchManager
+    var color: Color = SettingsManager.shared.restColor
     
     var body: some View {
         ZStack {
-            Color.green
+            color
             VStack(alignment:.center) {
-                Text(String(format: "%.1f", manager.secondsElapsed)).font(.largeTitle)
+                Text(String(format: "%.1f", manager.restSeconds)).font(.largeTitle)
             }
         }
     }

@@ -3,15 +3,16 @@ import SwiftUI
 struct TimerButton: View {
     var text: String = "Start"
     var action: () -> Void = { }
+    var color: Color = Color(.lightGray)
     
     var body: some View {
         Button(action: action, label: {
-            Text("Start")
+            Text(text)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
         })
-        .buttonStyle(NeumorphicButtonStyle(bgColor: Color(.lightGray)))
+        .buttonStyle(NeumorphicButtonStyle(bgColor: color))
         .padding([.leading, .trailing], 10)
         .frame(minWidth: 150, maxWidth: 250)
     }
@@ -19,7 +20,7 @@ struct TimerButton: View {
 
 struct TimerButton_Previews: PreviewProvider {
     static var previews: some View {
-        TimerButton()
+        TimerButton(text: "Start")
     }
 }
 

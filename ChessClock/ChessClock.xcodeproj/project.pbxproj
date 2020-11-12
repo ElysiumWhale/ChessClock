@@ -16,6 +16,11 @@
 		A76838132559E5CD0017E669 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopWatchManager.swift */; };
 		A76838142559E5CD0017E669 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopWatchManager.swift */; };
 		A76838152559E5CD0017E669 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopWatchManager.swift */; };
+		A7A08600255CACF600807225 /* TimeTry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A085FF255CACF600807225 /* TimeTry.swift */; };
+		A7A08601255CACF600807225 /* TimeTry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A085FF255CACF600807225 /* TimeTry.swift */; };
+		A7A08606255CB22D00807225 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A08605255CB22D00807225 /* SettingsManager.swift */; };
+		A7A08607255CB22D00807225 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A08605255CB22D00807225 /* SettingsManager.swift */; };
+		A7A08608255CB22D00807225 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A08605255CB22D00807225 /* SettingsManager.swift */; };
 		A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DD62554A83800A44984 /* ChessClockApp.swift */; };
 		A7A72DD92554A83800A44984 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DD82554A83800A44984 /* ContentView.swift */; };
 		A7A72DDB2554A83B00A44984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A72DDA2554A83B00A44984 /* Assets.xcassets */; };
@@ -49,6 +54,8 @@
 		A76142412559C23E00E8D54F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		A768380A2559E0860017E669 /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
 		A76838122559E5CD0017E669 /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
+		A7A085FF255CACF600807225 /* TimeTry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTry.swift; sourceTree = "<group>"; };
+		A7A08605255CB22D00807225 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		A7A72DD32554A83800A44984 /* ChessClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A72DD62554A83800A44984 /* ChessClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockApp.swift; sourceTree = "<group>"; };
 		A7A72DD82554A83800A44984 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				A76838122559E5CD0017E669 /* StopWatchManager.swift */,
+				A7A085FF255CACF600807225 /* TimeTry.swift */,
+				A7A08605255CB22D00807225 /* SettingsManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,8 +319,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7A72E0C25560A7800A44984 /* AppDelegate.swift in Sources */,
+				A7A08600255CACF600807225 /* TimeTry.swift in Sources */,
 				A76838132559E5CD0017E669 /* StopWatchManager.swift in Sources */,
 				A76142422559C23E00E8D54F /* ClockView.swift in Sources */,
+				A7A08606255CB22D00807225 /* SettingsManager.swift in Sources */,
 				A7A72DD92554A83800A44984 /* ContentView.swift in Sources */,
 				A768380B2559E0860017E669 /* TimerButton.swift in Sources */,
 				A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */,
@@ -325,7 +336,9 @@
 				A7A72E0D25560A7800A44984 /* AppDelegate.swift in Sources */,
 				A76838142559E5CD0017E669 /* StopWatchManager.swift in Sources */,
 				A768380C2559E0860017E669 /* TimerButton.swift in Sources */,
+				A7A08607255CB22D00807225 /* SettingsManager.swift in Sources */,
 				A76142432559C23E00E8D54F /* ClockView.swift in Sources */,
+				A7A08601255CACF600807225 /* TimeTry.swift in Sources */,
 				A7A72DE92554A83B00A44984 /* ChessClockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +349,7 @@
 			files = (
 				A7A72E0E25560A7800A44984 /* AppDelegate.swift in Sources */,
 				A76838152559E5CD0017E669 /* StopWatchManager.swift in Sources */,
+				A7A08608255CB22D00807225 /* SettingsManager.swift in Sources */,
 				A768380D2559E0860017E669 /* TimerButton.swift in Sources */,
 				A76142442559C23E00E8D54F /* ClockView.swift in Sources */,
 				A7A72DF42554A83B00A44984 /* ChessClockUITests.swift in Sources */,
