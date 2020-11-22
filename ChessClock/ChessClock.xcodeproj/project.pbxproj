@@ -69,7 +69,6 @@
 		A7A72DF32554A83B00A44984 /* ChessClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockUITests.swift; sourceTree = "<group>"; };
 		A7A72DF52554A83B00A44984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7A72E0B25560A7800A44984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7A72E1225560C1200A44984 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A7A72E3725560FD200A44984 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -157,7 +156,6 @@
 				A7A72E0B25560A7800A44984 /* AppDelegate.swift */,
 				A7A72DDA2554A83B00A44984 /* Assets.xcassets */,
 				A7A72DDF2554A83B00A44984 /* Info.plist */,
-				A7A72E1225560C1200A44984 /* GoogleService-Info.plist */,
 				A7A72DDC2554A83B00A44984 /* Preview Content */,
 			);
 			path = ChessClock;

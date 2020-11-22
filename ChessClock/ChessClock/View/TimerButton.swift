@@ -8,7 +8,7 @@ struct TimerButton: View {
     var body: some View {
         Button(action: action, label: {
             Text(text)
-                .font(.largeTitle)
+                .font(.title)
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
         })

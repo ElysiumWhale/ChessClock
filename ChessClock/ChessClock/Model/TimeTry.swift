@@ -6,11 +6,18 @@ enum timeType {
 }
 
 struct TimeTry {
-    let dateTry: Date = Date()
-    var intervals: [Interval] = [Interval]()
+    let startDate: Date = Date()
+    var intervals: [TimeStamp] = [TimeStamp]()
+    var endDate: Date?
+}
+
+class TimeStamp : ObservableObject {
+    var type: timeType
+    @Published var seconds: Float = 0
+    @Published var minutes = 0
+    @Published var hours = 0
     
-    struct Interval {
-        let type: timeType
-        let value: Double
+    init(timeType: timeType) {
+        type = timeType
     }
 }

@@ -6,18 +6,13 @@ struct ClockView: View {
     var body: some View {
         ZStack {
             VStack {
-                WorkTimeView(manager: manager).ignoresSafeArea()
+                WorkTimeView(timeStamp: manager.workTime).ignoresSafeArea()
                     .gesture(TapGesture().onEnded { manager.switchTimer() })
                 Spacer(minLength: 0)
-                RestTimeView(manager: manager)
+                RestTimeView(timeStamp: manager.restTime)
                     .gesture(TapGesture().onEnded { manager.switchTimer() })
             }
-            if manager.mode == .stopped {
-                TimerButton(text: "Start", action: manager.start, color: Color(.cyan))
-            }
-            if manager.mode == .running {
-                TimerButton(text: "Stop", action: manager.stop, color: Color(.red))
-            }
+            TimerButtonView(manager: manager)
         }
     }
 }
@@ -28,29 +23,64 @@ struct ClockView_Previews: PreviewProvider {
     }
 }
 
-struct WorkTimeView: View {
+struct TimerButtonView: View {
     @ObservedObject var manager: StopWatchManager
+    
+    var body: some View {
+        switch manager.state {
+            case .stopped:
+                HStack {
+                    TimerButton(text: "Start", action: manager.start, color: Color(.cyan))
+                }
+            case .running:
+                HStack {
+                    TimerButton(text: "Stop", action:   manager.stop, color: Color(.red))
+                    TimerButton(text: "Pause", action:  manager.pause, color: Color(.green))
+                }
+            case .paused:
+                HStack {
+                    TimerButton(text: "Resume", action:     manager.start, color: Color(.systemPink))
+                    TimerButton(text: "Stop", action:   manager.stop, color: Color(.red))
+                }
+        }
+    }
+}
+
+struct WorkTimeView: View {
+    @ObservedObject var timeStamp: TimeStamp
     var color: Color = SettingsManager.shared.workColor
     
     var body: some View {
         ZStack {
             color
             VStack(alignment:.center) {
-                Text(String(format: "%.1f", manager.workSeconds)).font(.largeTitle)
+                HStack {
+                    Spacer()
+                    Text(String("\(timeStamp.hours) :")).font(.largeTitle)
+                    Text(String("\(timeStamp.minutes) :")).font(.largeTitle)
+                    Text(String(format: "%.1f", timeStamp.seconds)).font(.largeTitle)
+                    Spacer()
+                }
             }
         }
     }
 }
 
 struct RestTimeView: View {
-    @ObservedObject var manager: StopWatchManager
+    @ObservedObject var timeStamp: TimeStamp
     var color: Color = SettingsManager.shared.restColor
     
     var body: some View {
         ZStack {
             color
             VStack(alignment:.center) {
-                Text(String(format: "%.1f", manager.restSeconds)).font(.largeTitle)
+                HStack {
+                    Spacer()
+                    Text(String("\(timeStamp.hours) :")).font(.largeTitle)
+                    Text(String("\(timeStamp.minutes) :")).font(.largeTitle)
+                    Text(String(format: "%.1f", timeStamp.seconds)).font(.largeTitle)
+                    Spacer()
+                }
             }
         }
     }

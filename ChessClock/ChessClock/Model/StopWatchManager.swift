@@ -1,39 +1,80 @@
 import SwiftUI
 
-enum stopWatchMode {
+enum stopWatchState {
     case running
     case stopped
     case paused
 }
 
+enum timerActive {
+    case none
+    case rest
+    case work
+}
+
 class StopWatchManager : ObservableObject {
     
-    @Published var restSeconds = 0.0
-    @Published var workSeconds = 0.0
-    @Published var mode: stopWatchMode = .stopped
+    @Published var restTime: TimeStamp = TimeStamp(timeType: .rest)
+    @Published var workTime: TimeStamp = TimeStamp(timeType: .work)
+    
+    @Published var state: stopWatchState = .stopped
+    @Published var timerActive: timerActive = .none
     
     var timeTries: [TimeTry] = [TimeTry]()
     var currentTry: TimeTry?
     
     var workTimer = Timer()
-    var restTImer = Timer()
+    var restTimer = Timer()
     
     func start() {
-        mode = .running
-        workTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true)
-        { timer in
-            self.workSeconds += 0.1
+        state = .running
+        switch timerActive {
+            case .none:
+                timerActive = .work
+                workTimer = setupTimer(.work)
+                currentTry = TimeTry()
+            case .rest:
+                restTimer = setupTimer(.rest)
+            case .work:
+                workTimer = setupTimer(.work)
         }
-        //currentTry = TimeTry()
+    }
+    
+    func pause() {
+        state = .paused
+        workTimer.invalidate()
+        restTimer.invalidate()
     }
     
     func stop() {
+        state = .stopped
         workTimer.invalidate()
-        currentTry?.intervals.append(.init(type: .work, value: workSeconds))
-        mode = .stopped
+        restTimer.invalidate()
+        //currentTry!.intervals.append(<#T##newElement: TimeStamp##TimeStamp#>)
+        timeTries.append(currentTry!)
+        currentTry = nil
     }
     
     func switchTimer() {
-        //TODO
+        
+    }
+    
+    func setupTimer(_ timeType: timeType) -> Timer {
+        switch timeType {
+            case .rest:
+                return Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true)
+                { [self] timer in
+                    if restTime.seconds == 59.9 {
+                        
+                    } else { restTime.seconds += 0.1 }
+                }
+            case .work:
+                return Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true)
+                { [self] timer in
+                    if workTime.seconds == 59.9 {
+                        
+                    } else { workTime.seconds += 0.1 }
+                }
+        }
     }
 }
