@@ -3,22 +3,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-           ClockView()
+            ClockView()
              .tabItem {
                 Image(systemName: "deskclock")
                 Text("Clock")
               }
-            Text("The content of the Stats view")
+            StatisticView()
               .tabItem {
                  Image(systemName: "bolt")
                  Text("Stats")
                }
-            Text("The content of the MapView view")
+            MapView()
             .tabItem {
                 Image(systemName: "map")
                 Text("Map")
             }
-            Text("The content of the Settings view")
+            SettingsView()
             .tabItem {
                 Image(systemName: "gear")
                 Text("Settings")
