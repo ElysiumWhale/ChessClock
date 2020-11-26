@@ -6,11 +6,12 @@ struct ClockView: View {
     var body: some View {
         ZStack {
             VStack {
-                WorkTimeView(timeStamp: manager.workTime).ignoresSafeArea()
-                    .gesture(TapGesture().onEnded { manager.switchTimer() })
+                WorkTimeView(timeStamp: manager.workTime)
+                    .ignoresSafeArea()
+                    .gesture(TapGesture().onEnded { manager.switchTimer(sender: .work) })
                 Spacer(minLength: 0)
                 RestTimeView(timeStamp: manager.restTime)
-                    .gesture(TapGesture().onEnded { manager.switchTimer() })
+                    .gesture(TapGesture().onEnded { manager.switchTimer(sender: .rest) })
             }
             TimerButtonView(manager: manager)
         }
@@ -58,7 +59,7 @@ struct WorkTimeView: View {
                     Spacer()
                     Text(String("\(timeStamp.hours) :")).font(.largeTitle)
                     Text(String("\(timeStamp.minutes) :")).font(.largeTitle)
-                    Text(String(format: "%.1f", timeStamp.seconds)).font(.largeTitle)
+                    Text(String("\(timeStamp.seconds)")).font(.largeTitle)
                     Spacer()
                 }
             }
@@ -78,7 +79,7 @@ struct RestTimeView: View {
                     Spacer()
                     Text(String("\(timeStamp.hours) :")).font(.largeTitle)
                     Text(String("\(timeStamp.minutes) :")).font(.largeTitle)
-                    Text(String(format: "%.1f", timeStamp.seconds)).font(.largeTitle)
+                    Text(String("\(timeStamp.seconds)")).font(.largeTitle)
                     Spacer()
                 }
             }

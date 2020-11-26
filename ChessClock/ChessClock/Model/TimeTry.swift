@@ -13,7 +13,7 @@ struct TimeTry {
 
 class TimeStamp : ObservableObject {
     var type: timeType
-    @Published var seconds: Float = 0
+    @Published var seconds = 0
     @Published var minutes = 0
     @Published var hours = 0
     

@@ -24,6 +24,7 @@ struct ContentView: View {
                 Text("Settings")
             }
         }
+        .accentColor(.black)
     }
 }
 
