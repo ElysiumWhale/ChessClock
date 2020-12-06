@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct ChessClockView: View {
     var body: some View {
         TabView {
             ClockView()
@@ -28,8 +28,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ChessClockView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ChessClockView()
     }
 }

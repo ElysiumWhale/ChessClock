@@ -24,29 +24,6 @@ struct ClockView_Previews: PreviewProvider {
     }
 }
 
-struct TimerButtonView: View {
-    @ObservedObject var manager: StopWatchManager
-    
-    var body: some View {
-        switch manager.state {
-            case .stopped:
-                HStack {
-                    TimerButton(text: "Start", action: manager.start, color: Color(.cyan))
-                }
-            case .running:
-                HStack {
-                    TimerButton(text: "Stop", action:   manager.stop, color: Color(.red))
-                    TimerButton(text: "Pause", action:  manager.pause, color: Color(.green))
-                }
-            case .paused:
-                HStack {
-                    TimerButton(text: "Resume", action:     manager.start, color: Color(.systemPink))
-                    TimerButton(text: "Stop", action:   manager.stop, color: Color(.red))
-                }
-        }
-    }
-}
-
 struct WorkTimeView: View {
     @ObservedObject var timeStamp: TimeStamp
     var color: Color = SettingsManager.shared.workColor
@@ -57,9 +34,12 @@ struct WorkTimeView: View {
             VStack(alignment:.center) {
                 HStack {
                     Spacer()
-                    Text(String("\(timeStamp.hours) :")).font(.largeTitle)
-                    Text(String("\(timeStamp.minutes) :")).font(.largeTitle)
-                    Text(String("\(timeStamp.seconds)")).font(.largeTitle)
+                    Text("\(timeStamp.hours) :")
+                        .timeStyle()
+                    Text("\(timeStamp.minutes) :")
+                        .timeStyle()
+                    Text("\(timeStamp.seconds)")
+                        .timeStyle()
                     Spacer()
                 }
             }
@@ -77,9 +57,12 @@ struct RestTimeView: View {
             VStack(alignment:.center) {
                 HStack {
                     Spacer()
-                    Text(String("\(timeStamp.hours) :")).font(.largeTitle)
-                    Text(String("\(timeStamp.minutes) :")).font(.largeTitle)
-                    Text(String("\(timeStamp.seconds)")).font(.largeTitle)
+                    Text("\(timeStamp.hours) :")
+                        .timeStyle()
+                    Text("\(timeStamp.minutes) :")
+                        .timeStyle()
+                    Text("\(timeStamp.seconds)")
+                        .timeStyle()
                     Spacer()
                 }
             }
