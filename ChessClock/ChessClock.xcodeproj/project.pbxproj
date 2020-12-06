@@ -127,12 +127,10 @@
 		A76142372559C11F00E8D54F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A76142412559C23E00E8D54F /* ClockView.swift */,
-				A77F750D257D15B800A86058 /* TimerButtonView.swift */,
-				A768380A2559E0860017E669 /* TimerButton.swift */,
-				A7761472256B32FD00846DAB /* MapView.swift */,
-				A7761479256B336400846DAB /* SettingsView.swift */,
-				A7761480256B33A200846DAB /* StatisticView.swift */,
+				A77F7517257D16E200A86058 /* Clock */,
+				A77F7518257D16FE00A86058 /* Statisctic */,
+				A77F7519257D171E00A86058 /* Map */,
+				A77F751A257D173300A86058 /* Settings */,
 				A7E05AED256F2FDC00F386B3 /* TabBarExtension.swift */,
 			);
 			path = View;
@@ -146,6 +144,40 @@
 				A7A08605255CB22D00807225 /* SettingsManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A77F7517257D16E200A86058 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				A76142412559C23E00E8D54F /* ClockView.swift */,
+				A77F750D257D15B800A86058 /* TimerButtonView.swift */,
+				A768380A2559E0860017E669 /* TimerButton.swift */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+		A77F7518257D16FE00A86058 /* Statisctic */ = {
+			isa = PBXGroup;
+			children = (
+				A7761480256B33A200846DAB /* StatisticView.swift */,
+			);
+			path = Statisctic;
+			sourceTree = "<group>";
+		};
+		A77F7519257D171E00A86058 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A7761472256B32FD00846DAB /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		A77F751A257D173300A86058 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A7761479256B336400846DAB /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		A7A72DCA2554A83800A44984 = {
