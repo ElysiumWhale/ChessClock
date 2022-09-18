@@ -17,9 +17,6 @@
 		A76838132559E5CD0017E669 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopWatchManager.swift */; };
 		A76838142559E5CD0017E669 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopWatchManager.swift */; };
 		A76838152559E5CD0017E669 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopWatchManager.swift */; };
-		A7761473256B32FD00846DAB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761472256B32FD00846DAB /* MapView.swift */; };
-		A7761474256B32FD00846DAB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761472256B32FD00846DAB /* MapView.swift */; };
-		A7761475256B32FE00846DAB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761472256B32FD00846DAB /* MapView.swift */; };
 		A776147A256B336400846DAB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761479256B336400846DAB /* SettingsView.swift */; };
 		A776147B256B336400846DAB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761479256B336400846DAB /* SettingsView.swift */; };
 		A776147C256B336400846DAB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761479256B336400846DAB /* SettingsView.swift */; };
@@ -68,7 +65,6 @@
 		A76142412559C23E00E8D54F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		A768380A2559E0860017E669 /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
 		A76838122559E5CD0017E669 /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
-		A7761472256B32FD00846DAB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A7761479256B336400846DAB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A7761480256B33A200846DAB /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		A77F750D257D15B800A86058 /* TimerButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButtonView.swift; sourceTree = "<group>"; };
@@ -130,8 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				A77F7517257D16E200A86058 /* Clock */,
-				A77F7518257D16FE00A86058 /* Statisctic */,
-				A77F7519257D171E00A86058 /* Map */,
+				A77F7518257D16FE00A86058 /* Statistic */,
 				A77F751A257D173300A86058 /* Settings */,
 				A7E05AED256F2FDC00F386B3 /* TabBarExtension.swift */,
 			);
@@ -158,20 +153,12 @@
 			path = Clock;
 			sourceTree = "<group>";
 		};
-		A77F7518257D16FE00A86058 /* Statisctic */ = {
+		A77F7518257D16FE00A86058 /* Statistic */ = {
 			isa = PBXGroup;
 			children = (
 				A7761480256B33A200846DAB /* StatisticView.swift */,
 			);
-			path = Statisctic;
-			sourceTree = "<group>";
-		};
-		A77F7519257D171E00A86058 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				A7761472256B32FD00846DAB /* MapView.swift */,
-			);
-			path = Map;
+			path = Statistic;
 			sourceTree = "<group>";
 		};
 		A77F751A257D173300A86058 /* Settings */ = {
@@ -387,7 +374,6 @@
 				A776147A256B336400846DAB /* SettingsView.swift in Sources */,
 				A7A72DD92554A83800A44984 /* ChessClockView.swift in Sources */,
 				A768380B2559E0860017E669 /* TimerButton.swift in Sources */,
-				A7761473256B32FD00846DAB /* MapView.swift in Sources */,
 				A7E05AEE256F2FDC00F386B3 /* TabBarExtension.swift in Sources */,
 				A7761481256B33A200846DAB /* StatisticView.swift in Sources */,
 				A77F750E257D15B800A86058 /* TimerButtonView.swift in Sources */,
@@ -401,7 +387,6 @@
 			files = (
 				A7A72E0D25560A7800A44984 /* AppDelegate.swift in Sources */,
 				A7761482256B33A200846DAB /* StatisticView.swift in Sources */,
-				A7761474256B32FD00846DAB /* MapView.swift in Sources */,
 				A76838142559E5CD0017E669 /* StopWatchManager.swift in Sources */,
 				A776147B256B336400846DAB /* SettingsView.swift in Sources */,
 				A768380C2559E0860017E669 /* TimerButton.swift in Sources */,
@@ -417,7 +402,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7761475256B32FE00846DAB /* MapView.swift in Sources */,
 				A776147C256B336400846DAB /* SettingsView.swift in Sources */,
 				A77F7510257D15B800A86058 /* TimerButtonView.swift in Sources */,
 				A7A72E0E25560A7800A44984 /* AppDelegate.swift in Sources */,

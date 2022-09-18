@@ -13,11 +13,6 @@ struct ChessClockView: View {
                  Image(systemName: "bolt")
                  Text("Stats")
                }
-            MapView()
-            .tabItem {
-                Image(systemName: "map")
-                Text("Map")
-            }
             SettingsView()
             .tabItem {
                 Image(systemName: "gear")
