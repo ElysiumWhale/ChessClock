@@ -2,24 +2,21 @@ import SwiftUI
 
 struct TimerButtonView: View {
     @ObservedObject var manager: StopWatchManager
-    
+
     var body: some View {
-        switch manager.state {
-            case .stopped:
-                HStack {
-                    TimerButton(text: "Start", action: manager.start, color: Color(.systemGreen))
-                }
-            case .running:
-                HStack {
-                    TimerButton(text: "Stop", action:   manager.stop, color: Color(.systemRed))
-                    TimerButton(text: "Pause", action:  manager.pause, color: Color(.systemYellow))
-                }
-            case .paused:
-                HStack {
-                    TimerButton(text: "Stop", action:   manager.stop, color: Color(.systemRed))
-                    TimerButton(text: "Resume", action:     manager.start, color: Color(.systemGreen))
-                }
+        let isRunning = manager.state == .running
+        let isStopped = manager.state == .stopped
+        HStack {
+            TimerButton(text: isStopped ? "Start" : "Stop",
+                        action: isStopped ? manager.start : manager.stop,
+                        color: isStopped ? Color(.systemGreen) : Color(.systemRed))
+            if !isStopped {
+                TimerButton(text: isRunning ? "Pause" : "Resume",
+                            action: isRunning ? manager.pause : manager.start,
+                            color: isRunning ? Color(.systemYellow) : Color(.systemGreen))
+            }
         }
+        .animation(.easeIn, value: !isStopped)
     }
 }
 

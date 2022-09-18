@@ -4,7 +4,7 @@ struct TimerButton: View {
     var text: String = "Start"
     var action: () -> Void = { }
     var color: Color = Color(.lightGray)
-    
+
     var body: some View {
         Button(action: action, label: {
             Text(text)
@@ -20,7 +20,13 @@ struct TimerButton: View {
 
 struct TimerButton_Previews: PreviewProvider {
     static var previews: some View {
-        TimerButton(text: "Start")
+        ZStack {
+            Color(.systemTeal)
+            VStack {
+                TimerButton(text: "Start")
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
     }
 }
 
@@ -33,15 +39,21 @@ struct NeumorphicButtonStyle: ButtonStyle {
             .background(
                 ZStack {
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .shadow(color: .white, radius: configuration.isPressed ? 7: 10, x: configuration.isPressed ? -5: -15, y: configuration.isPressed ? -5: -15)
-                        .shadow(color: .black, radius: configuration.isPressed ? 7: 10, x: configuration.isPressed ? 5: 15, y: configuration.isPressed ? 5: 15)
+                        .shadow(color: .white,
+                                radius: configuration.isPressed ? 7: 10,
+                                x: configuration.isPressed ? -5: -10,
+                                y: configuration.isPressed ? -5: -10)
+                        .shadow(color: .black,
+                                radius: configuration.isPressed ? 7: 10,
+                                x: configuration.isPressed ? 5: 10,
+                                y: configuration.isPressed ? 5: 10)
                         .blendMode(.overlay)
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
                         .fill(bgColor)
                 }
-        )
+            )
             .scaleEffect(configuration.isPressed ? 0.95: 1)
             .foregroundColor(.primary)
-            .animation(.spring())
+            .animation(.easeIn)
     }
 }
