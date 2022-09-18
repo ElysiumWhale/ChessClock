@@ -41,7 +41,6 @@
 		A7A72E0D25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
 		A7A72E0E25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
 		A7A72E3825560FD200A44984 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A72E3725560FD200A44984 /* MapKit.framework */; };
-		A7E05AEE256F2FDC00F386B3 /* TabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E05AED256F2FDC00F386B3 /* TabBarExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +83,6 @@
 		A7A72DF52554A83B00A44984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7A72E0B25560A7800A44984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7A72E3725560FD200A44984 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		A7E05AED256F2FDC00F386B3 /* TabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +126,6 @@
 				A77F7517257D16E200A86058 /* Clock */,
 				A77F7518257D16FE00A86058 /* Statistic */,
 				A77F751A257D173300A86058 /* Settings */,
-				A7E05AED256F2FDC00F386B3 /* TabBarExtension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -374,7 +371,6 @@
 				A776147A256B336400846DAB /* SettingsView.swift in Sources */,
 				A7A72DD92554A83800A44984 /* ChessClockView.swift in Sources */,
 				A768380B2559E0860017E669 /* TimerButton.swift in Sources */,
-				A7E05AEE256F2FDC00F386B3 /* TabBarExtension.swift in Sources */,
 				A7761481256B33A200846DAB /* StatisticView.swift in Sources */,
 				A77F750E257D15B800A86058 /* TimerButtonView.swift in Sources */,
 				A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */,
