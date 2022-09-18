@@ -55,6 +55,8 @@ class StopWatchManager : ObservableObject {
         
         //currentTry!.intervals.append(<#T##newElement: TimeStamp##TimeStamp#>)
         //timeTries.append(currentTry!)
+        restTime = .init(timeType: .rest)
+        workTime = .init(timeType: .work)
         currentTry = nil
     }
     
