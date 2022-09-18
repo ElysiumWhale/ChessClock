@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1482CE6128D7AFF60094B4B6 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 1482CE6028D7AFF60094B4B6 /* SFSafeSymbols */; };
+		1482CE6328D7B53B0094B4B6 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482CE6228D7B53B0094B4B6 /* TimeView.swift */; };
 		A76142422559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
 		A76142432559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
 		A76142442559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
@@ -61,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1482CE6228D7B53B0094B4B6 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 		A76142412559C23E00E8D54F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		A768380A2559E0860017E669 /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
 		A76838122559E5CD0017E669 /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				A76142412559C23E00E8D54F /* ClockView.swift */,
+				1482CE6228D7B53B0094B4B6 /* TimeView.swift */,
 				A77F750D257D15B800A86058 /* TimerButtonView.swift */,
 				A768380A2559E0860017E669 /* TimerButton.swift */,
 			);
@@ -374,6 +377,7 @@
 				A7761481256B33A200846DAB /* StatisticView.swift in Sources */,
 				A77F750E257D15B800A86058 /* TimerButtonView.swift in Sources */,
 				A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */,
+				1482CE6328D7B53B0094B4B6 /* TimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
