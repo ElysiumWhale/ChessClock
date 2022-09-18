@@ -1,25 +1,29 @@
 import SwiftUI
+import SFSafeSymbols
 
 struct ChessClockView: View {
+    @State
+    private var stopwatchManager = StopWatchManager()
+
     var body: some View {
         TabView {
-            ClockView()
+            ClockView(manager: stopwatchManager)
              .tabItem {
-                Image(systemName: "deskclock")
+                Image(systemSymbol: .deskclock)
                 Text("Clock")
               }
             StatisticView()
               .tabItem {
-                 Image(systemName: "bolt")
+                  Image(systemSymbol: .bolt)
                  Text("Stats")
                }
             SettingsView()
             .tabItem {
-                Image(systemName: "gear")
+                Image(systemSymbol: .gear)
                 Text("Settings")
             }
         }
-        .accentColor(.black)
+        .accentColor(.accentColor)
     }
 }
 
