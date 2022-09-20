@@ -2,10 +2,10 @@ import SwiftUI
 
 struct ClockView: View {
     @ObservedObject
-    private var settingsManager: SettingsManager = .shared
+    private var manager: StopWatchManager
 
     @ObservedObject
-    var manager: StopWatchManager
+    private var settingsManager: SettingsManager
 
     var body: some View {
         ZStack {
@@ -26,10 +26,15 @@ struct ClockView: View {
             }
         }
     }
+
+    init(manager: StopWatchManager, settingsManager: SettingsManager) {
+        self.manager = manager
+        self.settingsManager = settingsManager
+    }
 }
 
 struct ClockView_Previews: PreviewProvider {
     static var previews: some View {
-        ClockView(manager: .init())
+        ClockView(manager: .init(), settingsManager: .shared)
     }
 }
