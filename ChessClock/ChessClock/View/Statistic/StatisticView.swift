@@ -8,7 +8,28 @@ struct StatisticView: View {
     private var settingsManager: SettingsManager
 
     var body: some View {
-        Text("The content of the Stats view")
+        NavigationView {
+            List {
+                ForEach(manager.timeTries) { timeTry in
+                    VStack(alignment: .leading) {
+                        Text("\(timeTry.startDate)")
+                            .font(.headline)
+                        ForEach(timeTry.intervals) { interval in
+                            HStack {
+                                Text(interval.type.rawValue)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(interval.type == .work
+                                                     ? settingsManager.workColor
+                                                     : settingsManager.restColor)
+                                Text("\(interval.hours):\(interval.minutes):\(interval.seconds)")
+                            }
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Stats")
+        }
+    }
 
     init(manager: StopWatchManager, settingsManager: SettingsManager) {
         self.manager = manager

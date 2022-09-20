@@ -10,16 +10,17 @@ struct ChessClockView: View {
 
     var body: some View {
         TabView {
-            StatisticView()
-              .tabItem {
-                  Image(systemSymbol: .bolt)
-                 Text("Stats")
-               }
             ClockView(manager: stopwatchManager,
                       settingsManager: settingsManager)
                 .tabItem {
                     Image(systemSymbol: .clock)
                     Text("Clock")
+                }
+            StatisticView(manager: stopwatchManager,
+                          settingsManager: settingsManager)
+                .tabItem {
+                    Image(systemSymbol: .bolt)
+                    Text("Stats")
                 }
             SettingsView(settingsManager: settingsManager)
                 .tabItem {
