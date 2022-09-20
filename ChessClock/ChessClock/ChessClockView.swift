@@ -5,6 +5,9 @@ struct ChessClockView: View {
     @State
     private var stopwatchManager = StopWatchManager()
 
+    @State
+    private var settingsManager: SettingsManager = .shared
+
     var body: some View {
         TabView {
             ClockView(manager: stopwatchManager)
@@ -17,11 +20,11 @@ struct ChessClockView: View {
                   Image(systemSymbol: .bolt)
                  Text("Stats")
                }
-            SettingsView()
-            .tabItem {
-                Image(systemSymbol: .gear)
-                Text("Settings")
-            }
+            SettingsView(settingsManager: settingsManager)
+                .tabItem {
+                    Image(systemSymbol: .gear)
+                    Text("Settings")
+                }
         }
         .accentColor(.accentColor)
     }

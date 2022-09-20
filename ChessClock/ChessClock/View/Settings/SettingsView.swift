@@ -2,7 +2,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @ObservedObject
-    private var settingsManager: SettingsManager = .shared
+    private var settingsManager: SettingsManager
 
     var body: some View {
         NavigationView {
@@ -15,10 +15,14 @@ struct SettingsView: View {
             .navigationTitle("Settings")
         }
     }
+
+    init(settingsManager: SettingsManager) {
+        self.settingsManager = settingsManager
+    }
 }
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        SettingsView(settingsManager: .shared)
     }
 }
