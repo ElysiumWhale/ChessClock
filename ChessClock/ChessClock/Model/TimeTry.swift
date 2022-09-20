@@ -16,7 +16,7 @@ class TimeStamp : ObservableObject {
     @Published var seconds = 0
     @Published var minutes = 0
     @Published var hours = 0
-    
+
     init(timeType: timeType) {
         type = timeType
     }

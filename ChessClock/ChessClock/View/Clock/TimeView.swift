@@ -17,7 +17,6 @@ struct TimeView: View {
     }
 }
 
-
 struct TimeView_Previews: PreviewProvider {
     static var previews: some View {
         TimeView(timeStamp: .init(timeType: .work))
