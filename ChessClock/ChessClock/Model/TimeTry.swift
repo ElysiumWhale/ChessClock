@@ -5,10 +5,11 @@ enum TimeType: String {
     case rest
 }
 
-struct TimeTry {
-    let startDate: Date = Date()
+struct TimeTry: Identifiable {
+    let id: UUID
+    let startDate = Date()
+
     var intervals: [TimeStamp] = [TimeStamp]()
-    var endDate: Date?
 }
 
 class TimeStamp: ObservableObject, Identifiable {
