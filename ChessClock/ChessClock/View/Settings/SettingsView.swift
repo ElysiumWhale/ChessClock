@@ -5,15 +5,14 @@ struct SettingsView: View {
     private var settingsManager: SettingsManager = .shared
 
     var body: some View {
-        HStack {
-            Spacer(minLength: 16)
-            VStack {
-                ColorPicker("Choose rest clock color",
+        NavigationView {
+            List {
+                ColorPicker("Rest clock color",
                             selection: $settingsManager.restColor)
-                ColorPicker("Choose work clock color",
+                ColorPicker("Work clock color",
                             selection: $settingsManager.workColor)
             }
-            Spacer(minLength: 16)
+            .navigationTitle("Settings")
         }
     }
 }
