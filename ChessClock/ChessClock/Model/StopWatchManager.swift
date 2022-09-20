@@ -88,7 +88,7 @@ final class StopWatchManager: ObservableObject {
         }
     }
 
-    func setupTimer(_ timeType: timeType) -> Timer {
+    func setupTimer(_ timeType: TimeType) -> Timer {
         switch timeType {
         case .rest:
             return Timer.scheduledTimer(withTimeInterval: 1,
