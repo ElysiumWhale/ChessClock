@@ -42,6 +42,7 @@
 		A7A72E0D25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
 		A7A72E0E25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
 		A7A72E3825560FD200A44984 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A72E3725560FD200A44984 /* MapKit.framework */; };
+		A7A9235928DBCEB8002783F0 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9235828DBCEB8002783F0 /* DateFormatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		A7A72DF52554A83B00A44984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7A72E0B25560A7800A44984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7A72E3725560FD200A44984 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A7A9235828DBCEB8002783F0 /* DateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				A76838122559E5CD0017E669 /* StopWatchManager.swift */,
 				A7A085FF255CACF600807225 /* TimeTry.swift */,
 				A7A08605255CB22D00807225 /* SettingsManager.swift */,
+				A7A9235828DBCEB8002783F0 /* DateFormatting.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				A776147A256B336400846DAB /* SettingsView.swift in Sources */,
 				A7A72DD92554A83800A44984 /* ChessClockView.swift in Sources */,
 				A768380B2559E0860017E669 /* TimerButton.swift in Sources */,
+				A7A9235928DBCEB8002783F0 /* DateFormatting.swift in Sources */,
 				A7761481256B33A200846DAB /* StatisticView.swift in Sources */,
 				A77F750E257D15B800A86058 /* TimerButtonView.swift in Sources */,
 				A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */,
