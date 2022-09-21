@@ -13,16 +13,16 @@ struct ClockView: View {
                 .ignoresSafeArea(edges: .top)
             VStack {
                 TimeView(timeStamp: manager.workTime)
-                    .gesture(TapGesture().onEnded {
-                        manager.switchTimer(sender: .work)
-                    })
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .onTapGesture {
+                        manager.switchTimer(sender: .work)
+                    }
                 TimerButtonView(manager: manager)
                 TimeView(timeStamp: manager.restTime)
-                    .gesture(TapGesture().onEnded {
-                        manager.switchTimer(sender: .rest)
-                    })
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .onTapGesture {
+                        manager.switchTimer(sender: .rest)
+                    }
             }
         }
     }
