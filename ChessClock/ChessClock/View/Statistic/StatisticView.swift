@@ -12,7 +12,7 @@ struct StatisticView: View {
             List {
                 ForEach(manager.timeTries) { timeTry in
                     VStack(alignment: .leading) {
-                        Text("\(timeTry.startDate)")
+                        Text(timeTry.startDate.string(with: .display))
                             .font(.headline)
                         ForEach(timeTry.intervals) { interval in
                             HStack {
