@@ -12,16 +12,16 @@ struct ClockView: View {
             settingsManager.restColor
                 .ignoresSafeArea(edges: .top)
             VStack {
-                TimeView(timeStamp: manager.workTime)
+                TimeView(counter: manager.countingModel.workTime)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .onTapGesture {
-                        manager.switchTimer(sender: .work)
+                        manager.switchTimer(to: .work)
                     }
                 TimerButtonView(manager: manager)
-                TimeView(timeStamp: manager.restTime)
+                TimeView(counter: manager.countingModel.restTime)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .onTapGesture {
-                        manager.switchTimer(sender: .rest)
+                        manager.switchTimer(to: .rest)
                     }
             }
         }

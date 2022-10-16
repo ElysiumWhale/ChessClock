@@ -1,16 +1,18 @@
 import SwiftUI
 
 struct TimeView: View {
-    @ObservedObject var timeStamp: TimeStamp
+    @ObservedObject
+    var counter: TimeCounter
 
     var body: some View {
         HStack {
             Spacer()
-            Text("\(timeStamp.hours) :")
-                .timeStyle()
-            Text("\(timeStamp.minutes) :")
-                .timeStyle()
-            Text("\(timeStamp.seconds)")
+            // TODO: Return hours and minutes labels
+            // Text("\(timeStamp.hours) :")
+            //     .timeStyle()
+            // Text("\(timeStamp.minutes) :")
+            //     .timeStyle()
+            Text("\(counter.currentTime)")
                 .timeStyle()
             Spacer()
         }
@@ -19,7 +21,7 @@ struct TimeView: View {
 
 struct TimeView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeView(timeStamp: .init(timeType: .work))
+        TimeView(counter: .init())
     }
 }
 

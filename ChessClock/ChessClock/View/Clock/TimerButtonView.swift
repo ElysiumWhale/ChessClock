@@ -7,13 +7,17 @@ struct TimerButtonView: View {
         let isRunning = manager.state == .running
         let isStopped = manager.state == .stopped
         HStack {
-            TimerButton(text: isStopped ? "Start" : "Stop",
-                        action: isStopped ? manager.start : manager.stop,
-                        color: isStopped ? Color(.systemGreen) : Color(.systemRed))
+            TimerButton(
+                text: isStopped ? "Start" : "Stop",
+                action: isStopped ? manager.start : manager.stop,
+                color: isStopped ? Color(.systemGreen) : Color(.systemRed)
+            )
             if !isStopped {
-                TimerButton(text: isRunning ? "Pause" : "Resume",
-                            action: isRunning ? manager.pause : manager.start,
-                            color: isRunning ? Color(.systemYellow) : Color(.systemGreen))
+                TimerButton(
+                    text: isRunning ? "Pause" : "Resume",
+                    action: isRunning ? manager.pause : manager.start,
+                    color: isRunning ? Color(.systemYellow) : Color(.systemGreen)
+                )
             }
         }
         .animation(.easeIn, value: !isStopped)
