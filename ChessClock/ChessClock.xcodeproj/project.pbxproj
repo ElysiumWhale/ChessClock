@@ -11,6 +11,7 @@
 		1482CE6328D7B53B0094B4B6 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482CE6228D7B53B0094B4B6 /* TimeView.swift */; };
 		A724F53428FCBA9E00B9C5CC /* TimeCountingModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */; };
 		A724F53B28FCC54600B9C5CC /* TimeStampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */; };
+		A724F53F28FCC9D000B9C5CC /* StatisticCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */; };
 		A76142422559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
 		A76142432559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
 		A76142442559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
@@ -57,6 +58,7 @@
 		A724F53128FCBA9E00B9C5CC /* ChessClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCountingModelTests.swift; sourceTree = "<group>"; };
 		A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampTests.swift; sourceTree = "<group>"; };
+		A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCellView.swift; sourceTree = "<group>"; };
 		A76142412559C23E00E8D54F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		A768380A2559E0860017E669 /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
 		A76838122559E5CD0017E669 /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				A7761480256B33A200846DAB /* StatisticView.swift */,
+				A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */,
 			);
 			path = Statistic;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 		A7A72DD52554A83800A44984 /* ChessClock */ = {
 			isa = PBXGroup;
 			children = (
+				A77957DF28FB717200AF5057 /* Service */,
 				A76838112559E5A40017E669 /* Model */,
 				A76142372559C11F00E8D54F /* View */,
 				A7A72DD82554A83800A44984 /* ChessClockView.swift */,
@@ -333,6 +337,7 @@
 				A76838132559E5CD0017E669 /* StopWatchManager.swift in Sources */,
 				A77957E128FB728500AF5057 /* TimeCounter.swift in Sources */,
 				A76142422559C23E00E8D54F /* ClockView.swift in Sources */,
+				A724F53F28FCC9D000B9C5CC /* StatisticCellView.swift in Sources */,
 				A7A08606255CB22D00807225 /* SettingsManager.swift in Sources */,
 				A776147A256B336400846DAB /* SettingsView.swift in Sources */,
 				A7A72DD92554A83800A44984 /* ChessClockView.swift in Sources */,
