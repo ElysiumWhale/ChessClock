@@ -13,23 +13,13 @@
 		A724F53B28FCC54600B9C5CC /* TimeStampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */; };
 		A724F53F28FCC9D000B9C5CC /* StatisticCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */; };
 		A76142422559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
-		A76142432559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
-		A76142442559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
 		A768380B2559E0860017E669 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768380A2559E0860017E669 /* TimerButton.swift */; };
-		A768380C2559E0860017E669 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768380A2559E0860017E669 /* TimerButton.swift */; };
-		A768380D2559E0860017E669 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768380A2559E0860017E669 /* TimerButton.swift */; };
 		A76838132559E5CD0017E669 /* StopwatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopwatchService.swift */; };
 		A776147A256B336400846DAB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761479256B336400846DAB /* SettingsView.swift */; };
-		A776147B256B336400846DAB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761479256B336400846DAB /* SettingsView.swift */; };
-		A776147C256B336400846DAB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761479256B336400846DAB /* SettingsView.swift */; };
 		A7761481256B33A200846DAB /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761480256B33A200846DAB /* StatisticView.swift */; };
-		A7761482256B33A200846DAB /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761480256B33A200846DAB /* StatisticView.swift */; };
-		A7761483256B33A200846DAB /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761480256B33A200846DAB /* StatisticView.swift */; };
 		A77957DE28FB6B0F00AF5057 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77957DD28FB6B0F00AF5057 /* TimeStamp.swift */; };
 		A77957E128FB728500AF5057 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77957E028FB728500AF5057 /* TimeCounter.swift */; };
 		A77F750E257D15B800A86058 /* TimerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F750D257D15B800A86058 /* TimerButtonView.swift */; };
-		A77F750F257D15B800A86058 /* TimerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F750D257D15B800A86058 /* TimerButtonView.swift */; };
-		A77F7510257D15B800A86058 /* TimerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F750D257D15B800A86058 /* TimerButtonView.swift */; };
 		A7A08600255CACF600807225 /* TimeCountingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A085FF255CACF600807225 /* TimeCountingModel.swift */; };
 		A7A08606255CB22D00807225 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A08605255CB22D00807225 /* SettingsManager.swift */; };
 		A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DD62554A83800A44984 /* ChessClockApp.swift */; };
@@ -37,8 +27,6 @@
 		A7A72DDB2554A83B00A44984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A72DDA2554A83B00A44984 /* Assets.xcassets */; };
 		A7A72DDE2554A83B00A44984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A72DDD2554A83B00A44984 /* Preview Assets.xcassets */; };
 		A7A72E0C25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
-		A7A72E0D25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
-		A7A72E0E25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
 		A7A72E3825560FD200A44984 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A72E3725560FD200A44984 /* MapKit.framework */; };
 		A7A9235928DBCEB8002783F0 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9235828DBCEB8002783F0 /* DateFormatting.swift */; };
 /* End PBXBuildFile section */
