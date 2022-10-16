@@ -36,31 +36,12 @@
 		A7A72DD92554A83800A44984 /* ChessClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DD82554A83800A44984 /* ChessClockView.swift */; };
 		A7A72DDB2554A83B00A44984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A72DDA2554A83B00A44984 /* Assets.xcassets */; };
 		A7A72DDE2554A83B00A44984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A72DDD2554A83B00A44984 /* Preview Assets.xcassets */; };
-		A7A72DE92554A83B00A44984 /* ChessClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DE82554A83B00A44984 /* ChessClockTests.swift */; };
-		A7A72DF42554A83B00A44984 /* ChessClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DF32554A83B00A44984 /* ChessClockUITests.swift */; };
 		A7A72E0C25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
 		A7A72E0D25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
 		A7A72E0E25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
 		A7A72E3825560FD200A44984 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A72E3725560FD200A44984 /* MapKit.framework */; };
 		A7A9235928DBCEB8002783F0 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9235828DBCEB8002783F0 /* DateFormatting.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A7A72DE52554A83B00A44984 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A7A72DCB2554A83800A44984 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A7A72DD22554A83800A44984;
-			remoteInfo = ChessClock;
-		};
-		A7A72DF02554A83B00A44984 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A7A72DCB2554A83800A44984 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A7A72DD22554A83800A44984;
-			remoteInfo = ChessClock;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1482CE6228D7B53B0094B4B6 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
@@ -78,12 +59,6 @@
 		A7A72DDA2554A83B00A44984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7A72DDD2554A83B00A44984 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7A72DDF2554A83B00A44984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7A72DE42554A83B00A44984 /* ChessClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7A72DE82554A83B00A44984 /* ChessClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockTests.swift; sourceTree = "<group>"; };
-		A7A72DEA2554A83B00A44984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7A72DEF2554A83B00A44984 /* ChessClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7A72DF32554A83B00A44984 /* ChessClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockUITests.swift; sourceTree = "<group>"; };
-		A7A72DF52554A83B00A44984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7A72E0B25560A7800A44984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7A72E3725560FD200A44984 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A7A9235828DBCEB8002783F0 /* DateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatting.swift; sourceTree = "<group>"; };
@@ -96,20 +71,6 @@
 			files = (
 				1482CE6128D7AFF60094B4B6 /* SFSafeSymbols in Frameworks */,
 				A7A72E3825560FD200A44984 /* MapKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7A72DE12554A83B00A44984 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7A72DEC2554A83B00A44984 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				A7A72DD52554A83800A44984 /* ChessClock */,
-				A7A72DE72554A83B00A44984 /* ChessClockTests */,
-				A7A72DF22554A83B00A44984 /* ChessClockUITests */,
 				A7A72DD42554A83800A44984 /* Products */,
 				41A3120B801DA5769EDF4C7D /* Frameworks */,
 			);
@@ -187,8 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				A7A72DD32554A83800A44984 /* ChessClock.app */,
-				A7A72DE42554A83B00A44984 /* ChessClockTests.xctest */,
-				A7A72DEF2554A83B00A44984 /* ChessClockUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,24 +173,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A7A72DE72554A83B00A44984 /* ChessClockTests */ = {
-			isa = PBXGroup;
-			children = (
-				A7A72DE82554A83B00A44984 /* ChessClockTests.swift */,
-				A7A72DEA2554A83B00A44984 /* Info.plist */,
-			);
-			path = ChessClockTests;
-			sourceTree = "<group>";
-		};
-		A7A72DF22554A83B00A44984 /* ChessClockUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A7A72DF32554A83B00A44984 /* ChessClockUITests.swift */,
-				A7A72DF52554A83B00A44984 /* Info.plist */,
-			);
-			path = ChessClockUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -257,42 +196,6 @@
 			productReference = A7A72DD32554A83800A44984 /* ChessClock.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A7A72DE32554A83B00A44984 /* ChessClockTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A7A72DFB2554A83B00A44984 /* Build configuration list for PBXNativeTarget "ChessClockTests" */;
-			buildPhases = (
-				A7A72DE02554A83B00A44984 /* Sources */,
-				A7A72DE12554A83B00A44984 /* Frameworks */,
-				A7A72DE22554A83B00A44984 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A7A72DE62554A83B00A44984 /* PBXTargetDependency */,
-			);
-			name = ChessClockTests;
-			productName = ChessClockTests;
-			productReference = A7A72DE42554A83B00A44984 /* ChessClockTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A7A72DEE2554A83B00A44984 /* ChessClockUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A7A72DFE2554A83B00A44984 /* Build configuration list for PBXNativeTarget "ChessClockUITests" */;
-			buildPhases = (
-				A7A72DEB2554A83B00A44984 /* Sources */,
-				A7A72DEC2554A83B00A44984 /* Frameworks */,
-				A7A72DED2554A83B00A44984 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A7A72DF12554A83B00A44984 /* PBXTargetDependency */,
-			);
-			name = ChessClockUITests;
-			productName = ChessClockUITests;
-			productReference = A7A72DEF2554A83B00A44984 /* ChessClockUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -304,14 +207,6 @@
 				TargetAttributes = {
 					A7A72DD22554A83800A44984 = {
 						CreatedOnToolsVersion = 12.1;
-					};
-					A7A72DE32554A83B00A44984 = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = A7A72DD22554A83800A44984;
-					};
-					A7A72DEE2554A83B00A44984 = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = A7A72DD22554A83800A44984;
 					};
 				};
 			};
@@ -332,8 +227,6 @@
 			projectRoot = "";
 			targets = (
 				A7A72DD22554A83800A44984 /* ChessClock */,
-				A7A72DE32554A83B00A44984 /* ChessClockTests */,
-				A7A72DEE2554A83B00A44984 /* ChessClockUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -345,20 +238,6 @@
 			files = (
 				A7A72DDE2554A83B00A44984 /* Preview Assets.xcassets in Resources */,
 				A7A72DDB2554A83B00A44984 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7A72DE22554A83B00A44984 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7A72DED2554A83B00A44984 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,53 +264,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7A72DE02554A83B00A44984 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7A72E0D25560A7800A44984 /* AppDelegate.swift in Sources */,
-				A7761482256B33A200846DAB /* StatisticView.swift in Sources */,
-				A76838142559E5CD0017E669 /* StopWatchManager.swift in Sources */,
-				A776147B256B336400846DAB /* SettingsView.swift in Sources */,
-				A768380C2559E0860017E669 /* TimerButton.swift in Sources */,
-				A7A08607255CB22D00807225 /* SettingsManager.swift in Sources */,
-				A76142432559C23E00E8D54F /* ClockView.swift in Sources */,
-				A7A08601255CACF600807225 /* TimeTry.swift in Sources */,
-				A7A72DE92554A83B00A44984 /* ChessClockTests.swift in Sources */,
-				A77F750F257D15B800A86058 /* TimerButtonView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7A72DEB2554A83B00A44984 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A776147C256B336400846DAB /* SettingsView.swift in Sources */,
-				A77F7510257D15B800A86058 /* TimerButtonView.swift in Sources */,
-				A7A72E0E25560A7800A44984 /* AppDelegate.swift in Sources */,
-				A76838152559E5CD0017E669 /* StopWatchManager.swift in Sources */,
-				A7A08608255CB22D00807225 /* SettingsManager.swift in Sources */,
-				A768380D2559E0860017E669 /* TimerButton.swift in Sources */,
-				A76142442559C23E00E8D54F /* ClockView.swift in Sources */,
-				A7761483256B33A200846DAB /* StatisticView.swift in Sources */,
-				A7A72DF42554A83B00A44984 /* ChessClockUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A7A72DE62554A83B00A44984 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A7A72DD22554A83800A44984 /* ChessClock */;
-			targetProxy = A7A72DE52554A83B00A44984 /* PBXContainerItemProxy */;
-		};
-		A7A72DF12554A83B00A44984 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A7A72DD22554A83800A44984 /* ChessClock */;
-			targetProxy = A7A72DF02554A83B00A44984 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A7A72DF62554A83B00A44984 /* Debug */ = {
@@ -594,90 +427,6 @@
 			};
 			name = Release;
 		};
-		A7A72DFC2554A83B00A44984 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 235K7U278B;
-				INFOPLIST_FILE = ChessClockTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = elysium.ChessClockTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChessClock.app/ChessClock";
-			};
-			name = Debug;
-		};
-		A7A72DFD2554A83B00A44984 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 235K7U278B;
-				INFOPLIST_FILE = ChessClockTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = elysium.ChessClockTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChessClock.app/ChessClock";
-			};
-			name = Release;
-		};
-		A7A72DFF2554A83B00A44984 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 235K7U278B;
-				INFOPLIST_FILE = ChessClockUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = elysium.ChessClockUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChessClock;
-			};
-			name = Debug;
-		};
-		A7A72E002554A83B00A44984 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 235K7U278B;
-				INFOPLIST_FILE = ChessClockUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = elysium.ChessClockUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChessClock;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -695,24 +444,6 @@
 			buildConfigurations = (
 				A7A72DF92554A83B00A44984 /* Debug */,
 				A7A72DFA2554A83B00A44984 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A7A72DFB2554A83B00A44984 /* Build configuration list for PBXNativeTarget "ChessClockTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A7A72DFC2554A83B00A44984 /* Debug */,
-				A7A72DFD2554A83B00A44984 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A7A72DFE2554A83B00A44984 /* Build configuration list for PBXNativeTarget "ChessClockUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A7A72DFF2554A83B00A44984 /* Debug */,
-				A7A72E002554A83B00A44984 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
