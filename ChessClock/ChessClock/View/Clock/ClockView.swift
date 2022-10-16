@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ClockView: View {
     @ObservedObject
-    private var manager: StopWatchManager
+    private var manager: StopwatchService
 
     @ObservedObject
     private var settingsManager: SettingsManager
@@ -27,7 +27,7 @@ struct ClockView: View {
         }
     }
 
-    init(manager: StopWatchManager, settingsManager: SettingsManager) {
+    init(manager: StopwatchService, settingsManager: SettingsManager) {
         self.manager = manager
         self.settingsManager = settingsManager
     }

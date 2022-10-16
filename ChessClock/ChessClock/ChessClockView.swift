@@ -3,7 +3,7 @@ import SFSafeSymbols
 
 struct ChessClockView: View {
     @State
-    private var stopwatchManager = StopWatchManager()
+    private var stopwatchManager = StopwatchService()
 
     @State
     private var settingsManager: SettingsManager = .shared

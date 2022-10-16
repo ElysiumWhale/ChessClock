@@ -18,7 +18,7 @@
 		A768380B2559E0860017E669 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768380A2559E0860017E669 /* TimerButton.swift */; };
 		A768380C2559E0860017E669 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768380A2559E0860017E669 /* TimerButton.swift */; };
 		A768380D2559E0860017E669 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768380A2559E0860017E669 /* TimerButton.swift */; };
-		A76838132559E5CD0017E669 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopWatchManager.swift */; };
+		A76838132559E5CD0017E669 /* StopwatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopwatchService.swift */; };
 		A776147A256B336400846DAB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761479256B336400846DAB /* SettingsView.swift */; };
 		A776147B256B336400846DAB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761479256B336400846DAB /* SettingsView.swift */; };
 		A776147C256B336400846DAB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761479256B336400846DAB /* SettingsView.swift */; };
@@ -61,7 +61,7 @@
 		A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCellView.swift; sourceTree = "<group>"; };
 		A76142412559C23E00E8D54F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		A768380A2559E0860017E669 /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
-		A76838122559E5CD0017E669 /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
+		A76838122559E5CD0017E669 /* StopwatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchService.swift; sourceTree = "<group>"; };
 		A7761479256B336400846DAB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A7761480256B33A200846DAB /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		A77957DD28FB6B0F00AF5057 /* TimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 		A77957DF28FB717200AF5057 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				A76838122559E5CD0017E669 /* StopWatchManager.swift */,
+				A76838122559E5CD0017E669 /* StopwatchService.swift */,
 				A7A08605255CB22D00807225 /* SettingsManager.swift */,
 			);
 			path = Service;
@@ -334,7 +334,7 @@
 			files = (
 				A7A72E0C25560A7800A44984 /* AppDelegate.swift in Sources */,
 				A7A08600255CACF600807225 /* TimeCountingModel.swift in Sources */,
-				A76838132559E5CD0017E669 /* StopWatchManager.swift in Sources */,
+				A76838132559E5CD0017E669 /* StopwatchService.swift in Sources */,
 				A77957E128FB728500AF5057 /* TimeCounter.swift in Sources */,
 				A76142422559C23E00E8D54F /* ClockView.swift in Sources */,
 				A724F53F28FCC9D000B9C5CC /* StatisticCellView.swift in Sources */,

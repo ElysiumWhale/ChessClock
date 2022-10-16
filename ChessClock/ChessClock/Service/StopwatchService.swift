@@ -12,7 +12,7 @@ enum TimerType {
     case work
 }
 
-final class StopWatchManager: ObservableObject {
+final class StopwatchService: ObservableObject {
     private var clockTimer: Timer?
 
     @Published

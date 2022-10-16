@@ -2,7 +2,7 @@ import SwiftUI
 
 struct StatisticView: View {
     @ObservedObject
-    private var manager: StopWatchManager
+    private var manager: StopwatchService
 
     @ObservedObject
     private var settingsManager: SettingsManager
@@ -19,15 +19,15 @@ struct StatisticView: View {
         }
     }
 
-    init(manager: StopWatchManager, settingsManager: SettingsManager) {
+    init(manager: StopwatchService, settingsManager: SettingsManager) {
         self.manager = manager
         self.settingsManager = settingsManager
     }
 }
 
 struct StatisticView_Previews: PreviewProvider {
-    static let manager: StopWatchManager = {
-        let manager = StopWatchManager()
+    static let manager: StopwatchService = {
+        let manager = StopwatchService()
 
         manager.models.append(.init(intervals: [
             .init(timeType: .rest, minutes: 1),
