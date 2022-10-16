@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1482CE6128D7AFF60094B4B6 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 1482CE6028D7AFF60094B4B6 /* SFSafeSymbols */; };
 		1482CE6328D7B53B0094B4B6 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482CE6228D7B53B0094B4B6 /* TimeView.swift */; };
+		A724F53428FCBA9E00B9C5CC /* TimeCountingModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */; };
+		A724F53B28FCC54600B9C5CC /* TimeStampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */; };
 		A76142422559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
 		A76142432559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
 		A76142442559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
@@ -44,8 +46,21 @@
 		A7A9235928DBCEB8002783F0 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9235828DBCEB8002783F0 /* DateFormatting.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A724F53528FCBA9E00B9C5CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7A72DCB2554A83800A44984 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7A72DD22554A83800A44984;
+			remoteInfo = ChessClock;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1482CE6228D7B53B0094B4B6 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		A724F53128FCBA9E00B9C5CC /* ChessClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCountingModelTests.swift; sourceTree = "<group>"; };
+		A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampTests.swift; sourceTree = "<group>"; };
 		A76142412559C23E00E8D54F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		A768380A2559E0860017E669 /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
 		A76838122559E5CD0017E669 /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
@@ -68,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A724F52E28FCBA9E00B9C5CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7A72DD02554A83800A44984 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,6 +108,15 @@
 				A7A72E3725560FD200A44984 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A724F53228FCBA9E00B9C5CC /* ChessClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */,
+				A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */,
+			);
+			path = ChessClockTests;
 			sourceTree = "<group>";
 		};
 		A76142372559C11F00E8D54F /* View */ = {
@@ -142,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				A7A72DD52554A83800A44984 /* ChessClock */,
+				A724F53228FCBA9E00B9C5CC /* ChessClockTests */,
 				A7A72DD42554A83800A44984 /* Products */,
 				41A3120B801DA5769EDF4C7D /* Frameworks */,
 			);
@@ -151,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				A7A72DD32554A83800A44984 /* ChessClock.app */,
+				A724F53128FCBA9E00B9C5CC /* ChessClockTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +214,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A724F53028FCBA9E00B9C5CC /* ChessClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A724F53728FCBA9E00B9C5CC /* Build configuration list for PBXNativeTarget "ChessClockTests" */;
+			buildPhases = (
+				A724F52D28FCBA9E00B9C5CC /* Sources */,
+				A724F52E28FCBA9E00B9C5CC /* Frameworks */,
+				A724F52F28FCBA9E00B9C5CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A724F53628FCBA9E00B9C5CC /* PBXTargetDependency */,
+			);
+			name = ChessClockTests;
+			productName = ChessClockTests;
+			productReference = A724F53128FCBA9E00B9C5CC /* ChessClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A7A72DD22554A83800A44984 /* ChessClock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7A72DF82554A83B00A44984 /* Build configuration list for PBXNativeTarget "ChessClock" */;
@@ -207,9 +258,13 @@
 		A7A72DCB2554A83800A44984 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					A724F53028FCBA9E00B9C5CC = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = A7A72DD22554A83800A44984;
+					};
 					A7A72DD22554A83800A44984 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -232,11 +287,19 @@
 			projectRoot = "";
 			targets = (
 				A7A72DD22554A83800A44984 /* ChessClock */,
+				A724F53028FCBA9E00B9C5CC /* ChessClockTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A724F52F28FCBA9E00B9C5CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7A72DD12554A83800A44984 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,6 +312,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A724F52D28FCBA9E00B9C5CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A724F53B28FCC54600B9C5CC /* TimeStampTests.swift in Sources */,
+				A724F53428FCBA9E00B9C5CC /* TimeCountingModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7A72DCF2554A83800A44984 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,7 +345,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A724F53628FCBA9E00B9C5CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7A72DD22554A83800A44984 /* ChessClock */;
+			targetProxy = A724F53528FCBA9E00B9C5CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A724F53828FCBA9E00B9C5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 235K7U278B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elysium.ChessClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChessClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChessClock";
+			};
+			name = Debug;
+		};
+		A724F53928FCBA9E00B9C5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 235K7U278B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elysium.ChessClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChessClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChessClock";
+			};
+			name = Release;
+		};
 		A7A72DF62554A83B00A44984 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -437,6 +557,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A724F53728FCBA9E00B9C5CC /* Build configuration list for PBXNativeTarget "ChessClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A724F53828FCBA9E00B9C5CC /* Debug */,
+				A724F53928FCBA9E00B9C5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A7A72DCE2554A83800A44984 /* Build configuration list for PBXProject "ChessClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
