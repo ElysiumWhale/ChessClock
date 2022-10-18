@@ -27,7 +27,6 @@
 		A7A72DDB2554A83B00A44984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A72DDA2554A83B00A44984 /* Assets.xcassets */; };
 		A7A72DDE2554A83B00A44984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A72DDD2554A83B00A44984 /* Preview Assets.xcassets */; };
 		A7A72E0C25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
-		A7A72E3825560FD200A44984 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A72E3725560FD200A44984 /* MapKit.framework */; };
 		A7A9235928DBCEB8002783F0 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9235828DBCEB8002783F0 /* DateFormatting.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +63,6 @@
 		A7A72DDD2554A83B00A44984 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7A72DDF2554A83B00A44984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7A72E0B25560A7800A44984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7A72E3725560FD200A44984 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A7A9235828DBCEB8002783F0 /* DateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,21 +79,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1482CE6128D7AFF60094B4B6 /* SFSafeSymbols in Frameworks */,
-				A7A72E3825560FD200A44984 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41A3120B801DA5769EDF4C7D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A7A72E3725560FD200A44984 /* MapKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A724F53228FCBA9E00B9C5CC /* ChessClockTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +158,6 @@
 				A7A72DD52554A83800A44984 /* ChessClock */,
 				A724F53228FCBA9E00B9C5CC /* ChessClockTests */,
 				A7A72DD42554A83800A44984 /* Products */,
-				41A3120B801DA5769EDF4C7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
