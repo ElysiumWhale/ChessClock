@@ -16,11 +16,12 @@ final class StopwatchService: ObservableObject {
     private var clockTimer: Timer?
 
     @Published
+    private(set) var countingModel = TimeCountingModel()
+
+    @Published
     var state: StopWatchState = .stopped
     @Published
     var timerActive: TimerType = .none
-    @Published
-    var countingModel = TimeCountingModel()
     @Published
     var models = [TimeCountingModel]()
 
@@ -52,24 +53,16 @@ final class StopwatchService: ObservableObject {
     }
 
     func switchTimer(to timer: TimerType) {
-        guard state != .stopped, timer != timerActive else {
+        guard state != .stopped,
+              timer != timerActive,
+              timer != .none else {
             return
         }
 
-        switch timer {
-        case .none:
-            return
-        case .rest:
-            clockTimer?.invalidate()
-            countingModel.cutTimeStamp()
-            configureTimer(for: .rest)
-            timerActive = .rest
-        case .work:
-            clockTimer?.invalidate()
-            countingModel.cutTimeStamp()
-            configureTimer(for: .work)
-            timerActive = .work
-        }
+        clockTimer?.invalidate()
+        countingModel.cutTimeStamp()
+        configureTimer(for: timer)
+        timerActive = timer
     }
 
     private func configureTimer(for type: TimerType) {
