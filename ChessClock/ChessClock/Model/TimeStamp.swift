@@ -50,8 +50,12 @@ extension UInt {
 
             return (0, minutes, seconds)
         default:
-            // TODO: Count hours, minutes, seconds
-            return (0, 0, 0)
+            let seconds = self % 60
+            let allMinutes = (self - seconds)/60
+            let restMinutes = allMinutes % 60
+            let allHours = (allMinutes - restMinutes)/60
+
+            return (allHours, restMinutes, seconds)
         }
     }
 }

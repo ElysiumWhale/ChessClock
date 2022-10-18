@@ -32,6 +32,14 @@ final class TimeStampTests: XCTestCase {
         XCTAssertEqual(timeStamp2.minutes, 2)
         XCTAssertEqual(timeStamp2.seconds, 10)
 
-        // TODO: Test hours separation
+        let timeStamp3 = TimeStamp(timeType: .work, onlySeconds: 3666)
+        XCTAssertEqual(timeStamp3.hours, 1)
+        XCTAssertEqual(timeStamp3.minutes, 1)
+        XCTAssertEqual(timeStamp3.seconds, 6)
+
+        let timeStamp4 = TimeStamp(timeType: .work, onlySeconds: 7204)
+        XCTAssertEqual(timeStamp4.hours, 2)
+        XCTAssertEqual(timeStamp4.minutes, 0)
+        XCTAssertEqual(timeStamp4.seconds, 4)
     }
 }
