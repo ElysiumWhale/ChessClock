@@ -53,7 +53,7 @@ final class StopwatchService: ObservableObject {
     }
 
     func switchTimer(to timer: TimerType) {
-        guard state != .stopped,
+        guard state == .running,
               timer != timerActive,
               timer != .none else {
             return
