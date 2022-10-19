@@ -9,17 +9,22 @@ struct ClockView: View {
 
     var body: some View {
         ZStack {
-            settingsManager.restColor
-                .ignoresSafeArea(edges: .top)
+            VStack(spacing: .zero) {
+                settingsManager.restColor
+                    .ignoresSafeArea(edges: .top)
+                settingsManager.workColor
+            }
             VStack {
                 TimeView(counter: manager.countingModel.workTime)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .contentShape(Rectangle())
                     .onTapGesture {
                         manager.switchTimer(to: .work)
                     }
                 TimerButtonView(manager: manager)
                 TimeView(counter: manager.countingModel.restTime)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .contentShape(Rectangle())
                     .onTapGesture {
                         manager.switchTimer(to: .rest)
                     }
