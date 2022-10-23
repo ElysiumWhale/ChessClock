@@ -19,27 +19,28 @@ final class TimeCountingModel: Identifiable, ObservableObject {
     }
 
     func cutTimeStamp() {
-        switch intervals.last?.timeType {
+        let (counter, type) = counter(for: intervals.last)
+
+        guard counter.difference > 0 else {
+            return
+        }
+
+        intervals.append(
+            .init(timeType: type,
+                  onlySeconds: counter.difference)
+        )
+        counter.cutStamp()
+    }
+
+    private func counter(
+        for interval: TimeStamp?
+    ) -> (counter: TimeCounter, type: TimeType) {
+
+        switch interval?.timeType {
         case .work:
-            guard restTime.difference > 0 else {
-                return
-            }
-
-            intervals.append(
-                .init(timeType: .rest,
-                      onlySeconds: restTime.difference)
-            )
-            restTime.cutStamp()
+            return (restTime, .rest)
         case .rest, .none:
-            guard workTime.difference > 0 else {
-                return
-            }
-
-            intervals.append(
-                .init(timeType: .work,
-                      onlySeconds: workTime.difference)
-            )
-            workTime.cutStamp()
+            return (workTime, .work)
         }
     }
 }
