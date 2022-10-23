@@ -5,13 +5,12 @@ struct TimeView: View {
     var counter: TimeCounter
 
     var body: some View {
-        // TODO: Return hours and minutes labels
         HStack {
-            // Text("\(counter.currentTime) :")
-            //     .timeStyle()
-            // Text("\(counter.currentTime) :")
-            //     .timeStyle()
-            Text("\(counter.currentTime)")
+            Text("\(counter.hours) :")
+                .timeStyle()
+            Text("\(counter.minutes) :")
+                .timeStyle()
+            Text("\(counter.seconds)")
                 .timeStyle()
         }
     }
