@@ -20,7 +20,13 @@ struct StatisticCellView: View {
                                 ? settingsManager.workColor
                                 : settingsManager.restColor
                         )
+                    Spacer()
                     Text(interval.formattedTime)
+                        .foregroundColor(
+                            interval.timeType == .work
+                                ? settingsManager.workColor
+                                : settingsManager.restColor
+                        )
                 }
             }
         }

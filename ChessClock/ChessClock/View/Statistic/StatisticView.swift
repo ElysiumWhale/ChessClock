@@ -32,15 +32,15 @@ struct StatisticView_Previews: PreviewProvider {
         let manager = StopwatchService()
 
         manager.models.append(.init(intervals: [
-            .init(timeType: .rest, minutes: 1),
-            .init(timeType: .work, seconds: 20),
-            .init(timeType: .rest, seconds: 38)
+            .init(timeType: .work, minutes: 1),
+            .init(timeType: .rest, seconds: 20),
+            .init(timeType: .work, seconds: 38)
         ]))
 
         manager.models.append(.init(intervals: [
-            .init(timeType: .rest, minutes: 11),
-            .init(timeType: .work, seconds: 22),
-            .init(timeType: .rest, seconds: 33)
+            .init(timeType: .work, minutes: 11),
+            .init(timeType: .rest, seconds: 22),
+            .init(timeType: .work, onlySeconds: 333)
         ]))
 
         return manager
