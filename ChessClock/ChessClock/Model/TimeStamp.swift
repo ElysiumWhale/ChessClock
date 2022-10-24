@@ -13,6 +13,16 @@ struct TimeStamp: Identifiable {
     let minutes: UInt
     let hours: UInt
 
+    var formattedTime: String {
+        [
+            hours.withSymbolOrNil("h"),
+            minutes.withSymbolOrNil("m"),
+            seconds.withSymbolOrNil("s")
+        ]
+        .compactMap { $0 }
+        .joined(separator: " ")
+    }
+
     init(id: UUID = UUID(),
          timeType: TimeType,
          hours: UInt = 0,
@@ -57,5 +67,9 @@ extension UInt {
 
             return (allHours, restMinutes, seconds)
         }
+    }
+
+    func withSymbolOrNil(_ symbol: String) -> String? {
+        self > 0 ? "\(self)" + symbol : nil
     }
 }
