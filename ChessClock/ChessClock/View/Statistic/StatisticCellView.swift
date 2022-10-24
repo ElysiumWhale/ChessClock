@@ -20,9 +20,22 @@ struct StatisticCellView: View {
                                 ? settingsManager.workColor
                                 : settingsManager.restColor
                         )
-                    Text("\(interval.hours):\(interval.minutes):\(interval.seconds)")
+                    Text(interval.formattedTime)
                 }
             }
         }
+    }
+}
+
+struct StatisticCellView_Previews: PreviewProvider {
+    static var previews: some View {
+        StatisticCellView(
+            model: .init(intervals: [
+                .init(timeType: .work, onlySeconds: 32),
+                .init(timeType: .rest, onlySeconds: 67),
+                .init(timeType: .work, onlySeconds: 3705)
+            ]),
+            settingsManager: .shared
+        )
     }
 }
