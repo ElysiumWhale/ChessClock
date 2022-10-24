@@ -11,8 +11,10 @@ struct StatisticView: View {
         NavigationView {
             List {
                 ForEach(manager.models) { model in
-                    StatisticCellView(model: model,
-                                      settingsManager: settingsManager)
+                    StatisticCellView(
+                        model: model,
+                        settingsManager: settingsManager
+                    )
                 }
             }
             .navigationTitle("Stats")

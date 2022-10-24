@@ -24,6 +24,13 @@ struct TimeView_Previews: PreviewProvider {
 
 extension Text {
     func timeStyle() -> Text {
-        font(.system(.largeTitle, design: .rounded)).fontWeight(.bold)
+        if #available(iOS 15.0, *) {
+            return font(.system(.largeTitle, design: .rounded))
+                .fontWeight(.bold)
+                .monospacedDigit()
+        } else {
+            return font(.system(.largeTitle, design: .rounded))
+                .fontWeight(.bold)
+        }
     }
 }
