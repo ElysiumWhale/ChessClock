@@ -47,15 +47,18 @@ final class StopwatchService: ObservableObject {
         state = .stopped
         timerActive = .none
         clockTimer?.invalidate()
-        countingModel.cutTimeStamp()
-        models.append(countingModel)
+        if hasStarted {
+            countingModel.cutTimeStamp()
+            models.append(countingModel)
+        }
         countingModel = .init()
     }
 
     func switchTimer(to timer: TimerType) {
         guard state == .running,
               timer != timerActive,
-              timer != .none else {
+              timer != .none,
+              hasStarted else {
             return
         }
 
@@ -85,5 +88,12 @@ final class StopwatchService: ObservableObject {
         ) { [weak counter] _ in
             counter?.currentTime += 1
         }
+    }
+}
+
+private extension StopwatchService {
+    var hasStarted: Bool {
+        countingModel.workTime.currentTime > 0
+        || countingModel.restTime.currentTime > 0
     }
 }
