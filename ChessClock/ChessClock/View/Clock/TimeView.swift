@@ -13,6 +13,13 @@ struct TimeView: View {
             Text("\(counter.seconds)")
                 .timeStyle()
         }
+        .foregroundColor(.white)
+        .background {
+            Color(.black)
+                .opacity(0.4)
+                .cornerRadius(15)
+                .padding(-10)
+        }
     }
 }
 
