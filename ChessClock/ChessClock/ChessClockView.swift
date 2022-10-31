@@ -28,7 +28,7 @@ struct ChessClockView: View {
                     Text("Settings")
                 }
         }
-        .accentColor(.accentColor)
+        .accentColor(settingsManager.restColor)
     }
 }
 
