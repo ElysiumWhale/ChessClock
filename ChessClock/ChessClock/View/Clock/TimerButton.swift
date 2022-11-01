@@ -11,6 +11,7 @@ struct TimerButton: View {
                 .font(.title)
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
+                .foregroundColor(.white)
         })
         .buttonStyle(NeumorphicButtonStyle(bgColor: color))
         .padding([.leading, .trailing], 10)
