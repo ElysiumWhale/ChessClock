@@ -124,6 +124,15 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		A77CFF8E2911E95A0029B070 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A77957DF28FB717200AF5057 /* Service */,
+				A76838112559E5A40017E669 /* Model */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		A77F7517257D16E200A86058 /* Clock */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,8 +182,7 @@
 		A7A72DD52554A83800A44984 /* ChessClock */ = {
 			isa = PBXGroup;
 			children = (
-				A77957DF28FB717200AF5057 /* Service */,
-				A76838112559E5A40017E669 /* Model */,
+				A77CFF8E2911E95A0029B070 /* Core */,
 				A76142372559C11F00E8D54F /* View */,
 				A7A72DD82554A83800A44984 /* ChessClockView.swift */,
 				A7A72DD62554A83800A44984 /* ChessClockApp.swift */,
