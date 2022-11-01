@@ -2,7 +2,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @ObservedObject
-    private var settingsManager: SettingsManager
+    private var settingsManager: SettingsService
 
     var body: some View {
         NavigationView {
@@ -16,7 +16,7 @@ struct SettingsView: View {
         }
     }
 
-    init(settingsManager: SettingsManager) {
+    init(settingsManager: SettingsService) {
         self.settingsManager = settingsManager
     }
 }

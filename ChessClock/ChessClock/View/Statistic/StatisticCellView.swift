@@ -5,7 +5,7 @@ struct StatisticCellView: View {
     var model: TimeCountingModel
 
     @ObservedObject
-    var settingsManager: SettingsManager
+    var settingsManager: SettingsService
 
     var body: some View {
         VStack(alignment: .leading) {

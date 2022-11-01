@@ -1,7 +1,7 @@
 import SwiftUI
 
-final class SettingsManager: ObservableObject {
-    public static let shared = SettingsManager()
+final class SettingsService: ObservableObject {
+    public static let shared = SettingsService()
 
     private let defaults: UserDefaults
 

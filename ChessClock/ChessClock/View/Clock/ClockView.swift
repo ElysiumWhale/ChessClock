@@ -5,7 +5,7 @@ struct ClockView: View {
     private var manager: StopwatchService
 
     @ObservedObject
-    private var settingsManager: SettingsManager
+    private var settingsManager: SettingsService
 
     var body: some View {
         ZStack {
@@ -42,7 +42,7 @@ struct ClockView: View {
         }
     }
 
-    init(manager: StopwatchService, settingsManager: SettingsManager) {
+    init(manager: StopwatchService, settingsManager: SettingsService) {
         self.manager = manager
         self.settingsManager = settingsManager
     }

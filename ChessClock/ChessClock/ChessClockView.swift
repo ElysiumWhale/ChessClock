@@ -6,7 +6,7 @@ struct ChessClockView: View {
     private var stopwatchManager = StopwatchService()
 
     @State
-    private var settingsManager: SettingsManager = .shared
+    private var settingsManager: SettingsService = .shared
 
     var body: some View {
         TabView {
