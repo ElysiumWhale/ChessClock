@@ -31,6 +31,7 @@ final class StopwatchService: ObservableObject {
         case .none:
             countingModel.startDate = Date()
             configureTimer(for: .work)
+            timerActive = .work
         case .rest:
             configureTimer(for: .rest)
         case .work:
