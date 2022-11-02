@@ -4,8 +4,10 @@ struct StatisticCellView: View {
     @ObservedObject
     var model: TimeCountingModel
 
-    @ObservedObject
-    var settingsManager: SettingsService
+    @Binding
+    var workColor: Color
+    @Binding
+    var restColor: Color
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -17,15 +19,15 @@ struct StatisticCellView: View {
                         .fontWeight(.semibold)
                         .foregroundColor(
                             interval.timeType == .work
-                                ? settingsManager.workColor
-                                : settingsManager.restColor
+                                ? workColor
+                                : restColor
                         )
                     Spacer()
                     Text(interval.formattedTime)
                         .foregroundColor(
                             interval.timeType == .work
-                                ? settingsManager.workColor
-                                : settingsManager.restColor
+                                ? workColor
+                                : restColor
                         )
                 }
             }
@@ -41,7 +43,8 @@ struct StatisticCellView_Previews: PreviewProvider {
                 .init(timeType: .rest, onlySeconds: 67),
                 .init(timeType: .work, onlySeconds: 3705)
             ]),
-            settingsManager: .shared
+            workColor: .constant(.blue),
+            restColor: .constant(.yellow)
         )
     }
 }

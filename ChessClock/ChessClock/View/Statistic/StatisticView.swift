@@ -1,11 +1,11 @@
 import SwiftUI
 
-struct StatisticView: View {
+struct StatisticView<TStopwatch: IStopwatchService, TSettings: ISettingsService>: View {
     @ObservedObject
-    private var manager: StopwatchService
+    private var manager: TStopwatch
 
     @ObservedObject
-    private var settingsManager: SettingsService
+    private var settingsManager: TSettings
 
     var body: some View {
         NavigationView {
@@ -13,7 +13,8 @@ struct StatisticView: View {
                 ForEach(manager.models) { model in
                     StatisticCellView(
                         model: model,
-                        settingsManager: settingsManager
+                        workColor: $settingsManager.workColor,
+                        restColor: $settingsManager.restColor
                     )
                 }
             }
@@ -21,7 +22,7 @@ struct StatisticView: View {
         }
     }
 
-    init(manager: StopwatchService, settingsManager: SettingsService) {
+    init(manager: TStopwatch, settingsManager: TSettings) {
         self.manager = manager
         self.settingsManager = settingsManager
     }
@@ -47,7 +48,9 @@ struct StatisticView_Previews: PreviewProvider {
     }()
 
     static var previews: some View {
-        StatisticView(manager: manager,
-                      settingsManager: .shared)
+        StatisticView(
+            manager: manager,
+            settingsManager: SettingsService.shared
+        )
     }
 }
