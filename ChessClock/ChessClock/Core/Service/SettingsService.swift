@@ -1,6 +1,11 @@
 import SwiftUI
 
-final class SettingsService: ObservableObject {
+protocol ISettingsService: ObservableObject {
+    var workColor: Color { get set }
+    var restColor: Color { get set }
+}
+
+final class SettingsService: ObservableObject, ISettingsService {
     public static let shared = SettingsService()
 
     private let defaults: UserDefaults

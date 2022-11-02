@@ -12,7 +12,19 @@ enum TimerType {
     case work
 }
 
-final class StopwatchService: ObservableObject {
+protocol IStopwatchService: ObservableObject {
+    var countingModel: TimeCountingModel { get }
+    var timerActive: TimerType { get }
+    var state: StopWatchState { get }
+    var models: [TimeCountingModel] { get }
+
+    func start()
+    func stop()
+    func pause()
+    func switchTimer(to timer: TimerType)
+}
+
+final class StopwatchService: ObservableObject, IStopwatchService {
     private var clockTimer: Timer?
 
     @Published
