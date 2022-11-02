@@ -1,7 +1,8 @@
 import SwiftUI
 
-struct TimerButtonView: View {
-    @ObservedObject var manager: StopwatchService
+struct TimerButtonView<TStopwatch: IStopwatchService>: View {
+    @ObservedObject
+    var manager: TStopwatch
 
     var body: some View {
         let isRunning = manager.state == .running
