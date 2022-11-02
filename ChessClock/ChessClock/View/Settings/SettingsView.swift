@@ -1,28 +1,28 @@
 import SwiftUI
 
-struct SettingsView: View {
+struct SettingsView<TSettings: ISettingsService>: View {
     @ObservedObject
-    private var settingsManager: SettingsService
+    private var settingsService: TSettings
 
     var body: some View {
         NavigationView {
             List {
                 ColorPicker("Rest clock color",
-                            selection: $settingsManager.restColor)
+                            selection: $settingsService.restColor)
                 ColorPicker("Work clock color",
-                            selection: $settingsManager.workColor)
+                            selection: $settingsService.workColor)
             }
             .navigationTitle("Settings")
         }
     }
 
-    init(settingsManager: SettingsService) {
-        self.settingsManager = settingsManager
+    init(settingsService: TSettings) {
+        self.settingsService = settingsService
     }
 }
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView(settingsManager: .shared)
+        SettingsView(settingsService: SettingsService.shared)
     }
 }
