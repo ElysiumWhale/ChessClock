@@ -100,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				A77CFF8F2911EDF00029B070 /* Dependecies */,
+				A7A72DD82554A83800A44984 /* ChessClockView.swift */,
 				A77F7517257D16E200A86058 /* Clock */,
 				A77F7518257D16FE00A86058 /* Statistic */,
 				A77F751A257D173300A86058 /* Settings */,
@@ -195,7 +196,6 @@
 			children = (
 				A77CFF8E2911E95A0029B070 /* Core */,
 				A76142372559C11F00E8D54F /* View */,
-				A7A72DD82554A83800A44984 /* ChessClockView.swift */,
 				A7A72DD62554A83800A44984 /* ChessClockApp.swift */,
 				A7A72E0B25560A7800A44984 /* AppDelegate.swift */,
 				A7A72DDA2554A83B00A44984 /* Assets.xcassets */,
