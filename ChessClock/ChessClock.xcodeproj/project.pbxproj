@@ -19,6 +19,7 @@
 		A7761481256B33A200846DAB /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761480256B33A200846DAB /* StatisticView.swift */; };
 		A77957DE28FB6B0F00AF5057 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77957DD28FB6B0F00AF5057 /* TimeStamp.swift */; };
 		A77957E128FB728500AF5057 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77957E028FB728500AF5057 /* TimeCounter.swift */; };
+		A77CFF912911EE180029B070 /* ChessClockDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CFF902911EE180029B070 /* ChessClockDependency.swift */; };
 		A77F750E257D15B800A86058 /* TimerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F750D257D15B800A86058 /* TimerButtonView.swift */; };
 		A7A08600255CACF600807225 /* TimeCountingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A085FF255CACF600807225 /* TimeCountingModel.swift */; };
 		A7A08606255CB22D00807225 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A08605255CB22D00807225 /* SettingsService.swift */; };
@@ -53,6 +54,7 @@
 		A7761480256B33A200846DAB /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		A77957DD28FB6B0F00AF5057 /* TimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
 		A77957E028FB728500AF5057 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
+		A77CFF902911EE180029B070 /* ChessClockDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockDependency.swift; sourceTree = "<group>"; };
 		A77F750D257D15B800A86058 /* TimerButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButtonView.swift; sourceTree = "<group>"; };
 		A7A085FF255CACF600807225 /* TimeCountingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCountingModel.swift; sourceTree = "<group>"; };
 		A7A08605255CB22D00807225 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		A76142372559C11F00E8D54F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A77CFF8F2911EDF00029B070 /* Dependecies */,
 				A77F7517257D16E200A86058 /* Clock */,
 				A77F7518257D16FE00A86058 /* Statistic */,
 				A77F751A257D173300A86058 /* Settings */,
@@ -131,6 +134,14 @@
 				A76838112559E5A40017E669 /* Model */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		A77CFF8F2911EDF00029B070 /* Dependecies */ = {
+			isa = PBXGroup;
+			children = (
+				A77CFF902911EE180029B070 /* ChessClockDependency.swift */,
+			);
+			path = Dependecies;
 			sourceTree = "<group>";
 		};
 		A77F7517257D16E200A86058 /* Clock */ = {
@@ -325,6 +336,7 @@
 				A7A08606255CB22D00807225 /* SettingsService.swift in Sources */,
 				A776147A256B336400846DAB /* SettingsView.swift in Sources */,
 				A7A72DD92554A83800A44984 /* ChessClockView.swift in Sources */,
+				A77CFF912911EE180029B070 /* ChessClockDependency.swift in Sources */,
 				A768380B2559E0860017E669 /* TimerButton.swift in Sources */,
 				A7A9235928DBCEB8002783F0 /* DateFormatting.swift in Sources */,
 				A7761481256B33A200846DAB /* StatisticView.swift in Sources */,
