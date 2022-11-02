@@ -1,18 +1,18 @@
 import SwiftUI
 
-struct ClockView: View {
+struct ClockView<TStopwatch: IStopwatchService, TSettings: ISettingsService>: View {
     @ObservedObject
-    private var manager: StopwatchService
+    private var manager: TStopwatch
 
     @ObservedObject
-    private var settingsManager: SettingsService
+    private var settingsService: TSettings
 
     var body: some View {
         ZStack {
             VStack(spacing: .zero) {
-                settingsManager.restColor
+                settingsService.workColor
                     .ignoresSafeArea(edges: .top)
-                settingsManager.workColor
+                settingsService.restColor
             }
             VStack {
                 TimeView(counter: manager.countingModel.workTime)
@@ -42,14 +42,20 @@ struct ClockView: View {
         }
     }
 
-    init(manager: StopwatchService, settingsManager: SettingsService) {
+    init(
+        manager: TStopwatch,
+        settingsService: TSettings
+    ) {
         self.manager = manager
-        self.settingsManager = settingsManager
+        self.settingsService = settingsService
     }
 }
 
 struct ClockView_Previews: PreviewProvider {
     static var previews: some View {
-        ClockView(manager: .init(), settingsManager: .shared)
+        ClockView(
+            manager: StopwatchService(),
+            settingsService: SettingsService.shared
+        )
     }
 }
