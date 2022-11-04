@@ -12,6 +12,7 @@
 		A724F53428FCBA9E00B9C5CC /* TimeCountingModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */; };
 		A724F53B28FCC54600B9C5CC /* TimeStampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */; };
 		A724F53F28FCC9D000B9C5CC /* StatisticCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */; };
+		A739758229132E08009ECFA0 /* DefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A739758129132E08009ECFA0 /* DefaultsStorage.swift */; };
 		A76142422559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
 		A768380B2559E0860017E669 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768380A2559E0860017E669 /* TimerButton.swift */; };
 		A76838132559E5CD0017E669 /* StopwatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopwatchService.swift */; };
@@ -48,6 +49,7 @@
 		A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCountingModelTests.swift; sourceTree = "<group>"; };
 		A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampTests.swift; sourceTree = "<group>"; };
 		A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCellView.swift; sourceTree = "<group>"; };
+		A739758129132E08009ECFA0 /* DefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorage.swift; sourceTree = "<group>"; };
 		A76142412559C23E00E8D54F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		A768380A2559E0860017E669 /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
 		A76838122559E5CD0017E669 /* StopwatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchService.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				A76838122559E5CD0017E669 /* StopwatchService.swift */,
 				A7A08605255CB22D00807225 /* SettingsService.swift */,
+				A739758129132E08009ECFA0 /* DefaultsStorage.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				A77F750E257D15B800A86058 /* TimerButtonView.swift in Sources */,
 				A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */,
 				1482CE6328D7B53B0094B4B6 /* TimeView.swift in Sources */,
+				A739758229132E08009ECFA0 /* DefaultsStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
