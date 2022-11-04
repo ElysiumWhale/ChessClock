@@ -5,14 +5,19 @@ protocol IStorage<U> {
 
     func save<T: Codable>(value: T, key: U)
     func retrieve<T: Codable>(key: U) -> T?
+    func clearAll()
 }
 
 struct DefaultsStorage<U: RawRepresentable>: IStorage where U.RawValue == String {
     private let encoder = JSONEncoder()
     private let decoder = JSONDecoder()
-    private let container: UserDefaults
+    private let container: DefaultsContainer
 
-    init(container: UserDefaults = .standard) {
+    private var defaults: UserDefaults {
+        container.defaults
+    }
+
+    init(container: DefaultsContainer = .standard) {
         self.container = container
     }
 
@@ -21,14 +26,19 @@ struct DefaultsStorage<U: RawRepresentable>: IStorage where U.RawValue == String
             return
         }
 
-        container.set(data, forKey: key.rawValue)
+        defaults.set(data, forKey: key.rawValue)
     }
 
     func retrieve<T: Codable>(key: U) -> T? {
-        guard let data = container.data(forKey: key.rawValue) else {
+        guard let data = defaults.data(forKey: key.rawValue) else {
             return nil
         }
 
         return try? decoder.decode(T.self, from: data)
+    }
+
+    func clearAll() {
+        defaults.removePersistentDomain(forName: container.name)
+        defaults.synchronize()
     }
 }
