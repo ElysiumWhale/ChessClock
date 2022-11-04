@@ -13,6 +13,7 @@
 		A724F53B28FCC54600B9C5CC /* TimeStampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */; };
 		A724F53F28FCC9D000B9C5CC /* StatisticCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */; };
 		A739758229132E08009ECFA0 /* DefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A739758129132E08009ECFA0 /* DefaultsStorage.swift */; };
+		A7516D4A2915BEC800AD80AD /* DefaultsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7516D492915BEC800AD80AD /* DefaultsStorageTests.swift */; };
 		A7516D4C2915C77F00AD80AD /* DefaultsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7516D4B2915C77F00AD80AD /* DefaultsContainer.swift */; };
 		A76142422559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
 		A768380B2559E0860017E669 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768380A2559E0860017E669 /* TimerButton.swift */; };
@@ -51,6 +52,7 @@
 		A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampTests.swift; sourceTree = "<group>"; };
 		A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCellView.swift; sourceTree = "<group>"; };
 		A739758129132E08009ECFA0 /* DefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorage.swift; sourceTree = "<group>"; };
+		A7516D492915BEC800AD80AD /* DefaultsStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorageTests.swift; sourceTree = "<group>"; };
 		A7516D4B2915C77F00AD80AD /* DefaultsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsContainer.swift; sourceTree = "<group>"; };
 		A76142412559C23E00E8D54F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		A768380A2559E0860017E669 /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */,
 				A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */,
+				A7516D492915BEC800AD80AD /* DefaultsStorageTests.swift */,
 			);
 			path = ChessClockTests;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A724F53B28FCC54600B9C5CC /* TimeStampTests.swift in Sources */,
+				A7516D4A2915BEC800AD80AD /* DefaultsStorageTests.swift in Sources */,
 				A724F53428FCBA9E00B9C5CC /* TimeCountingModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
