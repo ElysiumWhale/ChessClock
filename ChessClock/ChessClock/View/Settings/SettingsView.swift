@@ -23,6 +23,6 @@ struct SettingsView<TSettings: ISettingsService>: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView(settingsService: SettingsService.shared)
+        SettingsView(settingsService: SettingsService())
     }
 }

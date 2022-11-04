@@ -55,7 +55,7 @@ struct ClockView_Previews: PreviewProvider {
     static var previews: some View {
         ClockView(
             manager: StopwatchService(),
-            settingsService: SettingsService.shared
+            settingsService: SettingsService()
         )
     }
 }

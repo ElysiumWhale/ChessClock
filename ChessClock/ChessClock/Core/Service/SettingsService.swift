@@ -6,16 +6,42 @@ protocol ISettingsService: ObservableObject {
 }
 
 final class SettingsService: ObservableObject, ISettingsService {
-    public static let shared = SettingsService()
 
-    private let defaults: UserDefaults
+    enum SettingKeys: String {
+        case workColor = "Settings.WorkColor"
+        case restColor = "Settings.RestColor"
+    }
+
+    private let settingsStorage: any IStorage<SettingKeys>
 
     @Published
-    var workColor: Color = Color(.systemPurple)
-    @Published
-    var restColor: Color = Color(.systemTeal)
+    var workColor: Color {
+        didSet {
+            settingsStorage.save(
+                value: workColor,
+                key: .workColor
+            )
+        }
+    }
 
-    private init(defaults: UserDefaults = .standard) {
-        self.defaults = defaults
+    @Published
+    var restColor: Color {
+        didSet {
+            settingsStorage.save(
+                value: restColor,
+                key: .restColor
+            )
+        }
+    }
+
+    init(settingsStorage: any IStorage<SettingKeys> = DefaultsStorage<SettingKeys>()) {
+        self.settingsStorage = settingsStorage
+
+        workColor = settingsStorage.retrieve(
+            key: .workColor
+        ) ?? Color(.systemPurple)
+        restColor = settingsStorage.retrieve(
+            key: .restColor
+        ) ?? Color(.systemTeal)
     }
 }

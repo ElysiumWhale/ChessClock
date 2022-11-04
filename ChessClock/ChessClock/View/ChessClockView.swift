@@ -36,8 +36,8 @@ struct ChessClockView<Dependency: IChessClockDependency>: View {
 struct ChessClockView_Previews: PreviewProvider {
     static var previews: some View {
         ChessClockView(dependency: ChessClockDependency(
-            stopwatchService: .init(),
-            settingsService: SettingsService.shared
+            stopwatchService: StopwatchService(),
+            settingsService: SettingsService()
         ))
     }
 }

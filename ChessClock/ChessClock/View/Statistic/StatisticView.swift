@@ -50,7 +50,7 @@ struct StatisticView_Previews: PreviewProvider {
     static var previews: some View {
         StatisticView(
             manager: manager,
-            settingsManager: SettingsService.shared
+            settingsManager: SettingsService()
         )
     }
 }
