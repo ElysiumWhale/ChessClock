@@ -21,6 +21,7 @@
 		A77957E128FB728500AF5057 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77957E028FB728500AF5057 /* TimeCounter.swift */; };
 		A77CFF912911EE180029B070 /* ChessClockDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CFF902911EE180029B070 /* ChessClockDependency.swift */; };
 		A77F750E257D15B800A86058 /* TimerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F750D257D15B800A86058 /* TimerButtonView.swift */; };
+		A79E933C2915ABE4005E47A1 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79E933B2915ABE4005E47A1 /* Color+Codable.swift */; };
 		A7A08600255CACF600807225 /* TimeCountingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A085FF255CACF600807225 /* TimeCountingModel.swift */; };
 		A7A08606255CB22D00807225 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A08605255CB22D00807225 /* SettingsService.swift */; };
 		A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DD62554A83800A44984 /* ChessClockApp.swift */; };
@@ -56,6 +57,7 @@
 		A77957E028FB728500AF5057 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		A77CFF902911EE180029B070 /* ChessClockDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockDependency.swift; sourceTree = "<group>"; };
 		A77F750D257D15B800A86058 /* TimerButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButtonView.swift; sourceTree = "<group>"; };
+		A79E933B2915ABE4005E47A1 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		A7A085FF255CACF600807225 /* TimeCountingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCountingModel.swift; sourceTree = "<group>"; };
 		A7A08605255CB22D00807225 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
 		A7A72DD32554A83800A44984 /* ChessClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 				A7A085FF255CACF600807225 /* TimeCountingModel.swift */,
 				A77957E028FB728500AF5057 /* TimeCounter.swift */,
 				A77957DD28FB6B0F00AF5057 /* TimeStamp.swift */,
+				A79E933B2915ABE4005E47A1 /* Color+Codable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				A7A08600255CACF600807225 /* TimeCountingModel.swift in Sources */,
 				A76838132559E5CD0017E669 /* StopwatchService.swift in Sources */,
 				A77957E128FB728500AF5057 /* TimeCounter.swift in Sources */,
+				A79E933C2915ABE4005E47A1 /* Color+Codable.swift in Sources */,
 				A76142422559C23E00E8D54F /* ClockView.swift in Sources */,
 				A724F53F28FCC9D000B9C5CC /* StatisticCellView.swift in Sources */,
 				A7A08606255CB22D00807225 /* SettingsService.swift in Sources */,
