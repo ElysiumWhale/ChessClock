@@ -17,20 +17,14 @@ final class SettingsService: ObservableObject, ISettingsService {
     @Published
     var workColor: Color {
         didSet {
-            settingsStorage.save(
-                value: workColor,
-                key: .workColor
-            )
+            settingsStorage.save(workColor, key: .workColor)
         }
     }
 
     @Published
     var restColor: Color {
         didSet {
-            settingsStorage.save(
-                value: restColor,
-                key: .restColor
-            )
+            settingsStorage.save(restColor, key: .restColor)
         }
     }
 

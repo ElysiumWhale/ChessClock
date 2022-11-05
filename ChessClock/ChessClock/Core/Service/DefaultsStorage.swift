@@ -3,7 +3,7 @@ import Foundation
 protocol IStorage<U> {
     associatedtype U: RawRepresentable where U.RawValue == String
 
-    func save<T: Codable>(value: T, key: U)
+    func save<T: Codable>(_ value: T, key: U)
     func retrieve<T: Codable>(key: U) -> T?
     func clearAll()
 }
@@ -21,7 +21,7 @@ struct DefaultsStorage<U: RawRepresentable>: IStorage where U.RawValue == String
         self.container = container
     }
 
-    func save<T: Codable>(value: T, key: U) {
+    func save<T: Codable>(_ value: T, key: U) {
         guard let data = try? encoder.encode(value) else {
             return
         }
