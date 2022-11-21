@@ -15,7 +15,7 @@ final class DefaultsStorageTests: XCTestCase {
             container: testContainer
         )
 
-        testStorage.save(_ value: expectation, key: .test)
+        testStorage.save(expectation, key: .test)
         let retrieved: Int? = testStorage.retrieve(key: .test)
         XCTAssertEqual(retrieved, expectation)
         testStorage.clearAll()
