@@ -5,7 +5,7 @@ struct StatisticView<TStopwatch: IStopwatchService, TSettings: ISettingsService>
     private var manager: TStopwatch
 
     @ObservedObject
-    private var settingsManager: TSettings
+    private var settingsService: TSettings
 
     var body: some View {
         NavigationView {
@@ -13,8 +13,8 @@ struct StatisticView<TStopwatch: IStopwatchService, TSettings: ISettingsService>
                 ForEach(manager.models) { model in
                     StatisticCellView(
                         model: model,
-                        workColor: $settingsManager.workColor,
-                        restColor: $settingsManager.restColor
+                        workColor: $settingsService.workColor,
+                        restColor: $settingsService.restColor
                     )
                 }
             }
@@ -22,9 +22,9 @@ struct StatisticView<TStopwatch: IStopwatchService, TSettings: ISettingsService>
         }
     }
 
-    init(manager: TStopwatch, settingsManager: TSettings) {
+    init(manager: TStopwatch, settingsService: TSettings) {
         self.manager = manager
-        self.settingsManager = settingsManager
+        self.settingsService = settingsService
     }
 }
 
@@ -50,7 +50,7 @@ struct StatisticView_Previews: PreviewProvider {
     static var previews: some View {
         StatisticView(
             manager: manager,
-            settingsManager: SettingsService()
+            settingsService: SettingsService()
         )
     }
 }

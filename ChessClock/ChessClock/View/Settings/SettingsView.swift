@@ -7,10 +7,14 @@ struct SettingsView<TSettings: ISettingsService>: View {
     var body: some View {
         NavigationView {
             List {
-                ColorPicker("Rest clock color",
-                            selection: $settingsService.restColor)
-                ColorPicker("Work clock color",
-                            selection: $settingsService.workColor)
+                ColorPicker(
+                    "Rest clock color",
+                    selection: $settingsService.restColor
+                )
+                ColorPicker(
+                    "Work clock color",
+                    selection: $settingsService.workColor
+                )
             }
             .navigationTitle("Settings")
         }
