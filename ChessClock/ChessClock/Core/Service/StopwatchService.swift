@@ -26,6 +26,7 @@ protocol IStopwatchService: ObservableObject {
 
 final class StopwatchService: ObservableObject, IStopwatchService {
     private var clockTimer: Timer?
+    private var suspendDate: Date?
 
     @Published
     private(set) var countingModel = TimeCountingModel()
@@ -108,5 +109,31 @@ private extension StopwatchService {
     var hasStarted: Bool {
         countingModel.workTime.currentTime > 0
         || countingModel.restTime.currentTime > 0
+    }
+}
+
+// MARK: - Background work
+extension StopwatchService {
+    func suspend() {
+        pause()
+        suspendDate = Date()
+    }
+
+    func revive() {
+        guard let suspendDate, timerActive != .none else {
+            return
+        }
+
+        self.suspendDate = nil
+        let elapsedTime = Date().timeIntervalSince(suspendDate)
+        start()
+        switch timerActive {
+        case .rest:
+            countingModel.restTime.currentTime += UInt(elapsedTime)
+        case .work:
+            countingModel.workTime.currentTime += UInt(elapsedTime)
+        case .none:
+            break
+        }
     }
 }
