@@ -12,6 +12,12 @@ enum TimerType {
     case work
 }
 
+
+struct Try: Codable {
+    let id: UUID
+    let intervals: [TimeStamp]
+}
+
 protocol IStopwatchService: ObservableObject {
     var countingModel: TimeCountingModel { get }
     var timerActive: TimerType { get }
@@ -28,6 +34,12 @@ protocol IStopwatchService: ObservableObject {
 }
 
 final class StopwatchService: ObservableObject, IStopwatchService {
+    enum ModelsKeys: String {
+        case savedModels
+    }
+
+    private let storage: any IStorage<ModelsKeys>
+
     private var clockTimer: Timer?
     private var suspendDate: Date?
 
@@ -39,7 +51,15 @@ final class StopwatchService: ObservableObject, IStopwatchService {
     @Published
     var timerActive: TimerType = .none
     @Published
-    var models = [TimeCountingModel]()
+    var models: [TimeCountingModel]
+
+    init(storage: any IStorage<ModelsKeys> = DefaultsStorage<ModelsKeys>()) {
+        self.storage = storage
+        let tries: [Try]? = storage.retrieve(key: .savedModels)
+        models = tries?.map {
+            TimeCountingModel(id: $0.id, intervals: $0.intervals)
+        } ?? []
+    }
 
     func start() {
         state = .running
@@ -67,6 +87,12 @@ final class StopwatchService: ObservableObject, IStopwatchService {
         if hasStarted {
             countingModel.cutTimeStamp()
             models.append(countingModel)
+            storage.save(
+                models.map {
+                    Try(id: $0.id, intervals: $0.intervals)
+                },
+                key: .savedModels
+            )
         }
         countingModel = .init()
     }
@@ -87,6 +113,14 @@ final class StopwatchService: ObservableObject, IStopwatchService {
 
     func remove(at offsets: IndexSet) {
         models.remove(atOffsets: offsets)
+        let tries = [Try]()
+        storage.save(tries, key: .savedModels)
+        storage.save(
+            models.map {
+                Try(id: $0.id, intervals: $0.intervals)
+            },
+            key: .savedModels
+        )
     }
 
     private func configureTimer(for type: TimerType) {

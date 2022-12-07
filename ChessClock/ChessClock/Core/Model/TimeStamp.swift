@@ -1,11 +1,11 @@
 import Foundation
 
-enum TimeType: String {
+enum TimeType: String, Codable {
     case work
     case rest
 }
 
-struct TimeStamp: Identifiable {
+struct TimeStamp: Identifiable, Codable {
     let id: UUID
     let timeType: TimeType
 
