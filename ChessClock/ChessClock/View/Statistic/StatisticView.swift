@@ -13,8 +13,8 @@ struct StatisticView<TStopwatch: IStopwatchService, TSettings: ISettingsService>
                 ForEach(manager.models) { model in
                     StatisticCellView(
                         model: model,
-                        workColor: $settingsService.workColor,
-                        restColor: $settingsService.restColor
+                        workColor: workColor,
+                        restColor: restColor
                     )
                 }
             }
@@ -25,6 +25,16 @@ struct StatisticView<TStopwatch: IStopwatchService, TSettings: ISettingsService>
     init(manager: TStopwatch, settingsService: TSettings) {
         self.manager = manager
         self.settingsService = settingsService
+    }
+}
+
+private extension StatisticView {
+    private var workColor: Binding<Color> {
+        $settingsService.workColor
+    }
+
+    private var restColor: Binding<Color> {
+        $settingsService.restColor
     }
 }
 
