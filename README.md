@@ -1,6 +1,10 @@
 # ChessClock
 
+## Done
+
+- Background work
+
 ## ToDo
 
 - CoreData timestamps saving
-- Background work
+
