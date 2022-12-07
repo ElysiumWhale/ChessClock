@@ -17,6 +17,7 @@ struct StatisticView<TStopwatch: IStopwatchService, TSettings: ISettingsService>
                         restColor: restColor
                     )
                 }
+                .onDelete(perform: manager.remove)
             }
             .navigationTitle("Stats")
         }

@@ -22,6 +22,9 @@ protocol IStopwatchService: ObservableObject {
     func stop()
     func pause()
     func switchTimer(to timer: TimerType)
+
+    // TODO: - Separate data source
+    func remove(at offsets: IndexSet) 
 }
 
 final class StopwatchService: ObservableObject, IStopwatchService {
@@ -80,6 +83,10 @@ final class StopwatchService: ObservableObject, IStopwatchService {
         countingModel.cutTimeStamp()
         configureTimer(for: timer)
         timerActive = timer
+    }
+
+    func remove(at offsets: IndexSet) {
+        models.remove(atOffsets: offsets)
     }
 
     private func configureTimer(for type: TimerType) {
