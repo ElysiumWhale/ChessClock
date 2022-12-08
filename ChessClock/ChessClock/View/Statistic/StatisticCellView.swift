@@ -1,8 +1,7 @@
 import SwiftUI
 
 struct StatisticCellView: View {
-    @ObservedObject
-    var model: TimeCountingModel
+    let model: TimeTry
 
     @Binding
     var workColor: Color
@@ -38,11 +37,14 @@ struct StatisticCellView: View {
 struct StatisticCellView_Previews: PreviewProvider {
     static var previews: some View {
         StatisticCellView(
-            model: .init(intervals: [
-                .init(timeType: .work, onlySeconds: 32),
-                .init(timeType: .rest, onlySeconds: 67),
-                .init(timeType: .work, onlySeconds: 3705)
-            ]),
+            model: .init(
+                id: UUID(),
+                startDate: Date(), intervals: [
+                    .init(timeType: .work, onlySeconds: 32),
+                    .init(timeType: .rest, onlySeconds: 67),
+                    .init(timeType: .work, onlySeconds: 3705)
+                ]
+            ),
             workColor: .constant(.blue),
             restColor: .constant(.yellow)
         )
