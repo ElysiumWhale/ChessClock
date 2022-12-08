@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1482CE6128D7AFF60094B4B6 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 1482CE6028D7AFF60094B4B6 /* SFSafeSymbols */; };
 		1482CE6328D7B53B0094B4B6 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482CE6228D7B53B0094B4B6 /* TimeView.swift */; };
+		A70F7D802942A544003854F1 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70F7D7F2942A544003854F1 /* DataSource.swift */; };
 		A724F53428FCBA9E00B9C5CC /* TimeCountingModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */; };
 		A724F53B28FCC54600B9C5CC /* TimeStampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */; };
 		A724F53F28FCC9D000B9C5CC /* StatisticCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		1482CE6228D7B53B0094B4B6 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		A70F7D7F2942A544003854F1 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		A724F53128FCBA9E00B9C5CC /* ChessClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCountingModelTests.swift; sourceTree = "<group>"; };
 		A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampTests.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				A76838122559E5CD0017E669 /* StopwatchService.swift */,
 				A7A08605255CB22D00807225 /* SettingsService.swift */,
 				A739758129132E08009ECFA0 /* DefaultsStorage.swift */,
+				A70F7D7F2942A544003854F1 /* DataSource.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A70F7D802942A544003854F1 /* DataSource.swift in Sources */,
 				A7A72E0C25560A7800A44984 /* AppDelegate.swift in Sources */,
 				A7A08600255CACF600807225 /* TimeCountingModel.swift in Sources */,
 				A76838132559E5CD0017E669 /* StopwatchService.swift in Sources */,
