@@ -10,6 +10,7 @@
 		1482CE6128D7AFF60094B4B6 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 1482CE6028D7AFF60094B4B6 /* SFSafeSymbols */; };
 		1482CE6328D7B53B0094B4B6 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482CE6228D7B53B0094B4B6 /* TimeView.swift */; };
 		A70F7D802942A544003854F1 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70F7D7F2942A544003854F1 /* DataSource.swift */; };
+		A70F7D822942B04E003854F1 /* TimeTry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70F7D812942B04E003854F1 /* TimeTry.swift */; };
 		A724F53428FCBA9E00B9C5CC /* TimeCountingModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */; };
 		A724F53B28FCC54600B9C5CC /* TimeStampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */; };
 		A724F53F28FCC9D000B9C5CC /* StatisticCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		1482CE6228D7B53B0094B4B6 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 		A70F7D7F2942A544003854F1 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		A70F7D812942B04E003854F1 /* TimeTry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTry.swift; sourceTree = "<group>"; };
 		A724F53128FCBA9E00B9C5CC /* ChessClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCountingModelTests.swift; sourceTree = "<group>"; };
 		A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampTests.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				A7A9235828DBCEB8002783F0 /* DateFormatting.swift */,
 				A7A085FF255CACF600807225 /* TimeCountingModel.swift */,
 				A77957E028FB728500AF5057 /* TimeCounter.swift */,
+				A70F7D812942B04E003854F1 /* TimeTry.swift */,
 				A77957DD28FB6B0F00AF5057 /* TimeStamp.swift */,
 				A79E933B2915ABE4005E47A1 /* Color+Codable.swift */,
 				A7516D4B2915C77F00AD80AD /* DefaultsContainer.swift */,
@@ -359,6 +362,7 @@
 				A768380B2559E0860017E669 /* TimerButton.swift in Sources */,
 				A7A9235928DBCEB8002783F0 /* DateFormatting.swift in Sources */,
 				A7761481256B33A200846DAB /* StatisticView.swift in Sources */,
+				A70F7D822942B04E003854F1 /* TimeTry.swift in Sources */,
 				A77957DE28FB6B0F00AF5057 /* TimeStamp.swift in Sources */,
 				A77F750E257D15B800A86058 /* TimerButtonView.swift in Sources */,
 				A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */,
