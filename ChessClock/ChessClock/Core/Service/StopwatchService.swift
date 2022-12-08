@@ -12,54 +12,34 @@ enum TimerType {
     case work
 }
 
-
-struct Try: Codable {
-    let id: UUID
-    let intervals: [TimeStamp]
-}
-
 protocol IStopwatchService: ObservableObject {
     var countingModel: TimeCountingModel { get }
     var timerActive: TimerType { get }
     var state: StopWatchState { get }
-    var models: [TimeCountingModel] { get }
 
     func start()
     func stop()
     func pause()
     func switchTimer(to timer: TimerType)
+}
 
-    // TODO: - Separate data source
-    func remove(at offsets: IndexSet) 
+protocol IStopwatchDelegate: AnyObject {
+    func didFinishCountingModel(_ model: TimeCountingModel)
 }
 
 final class StopwatchService: ObservableObject, IStopwatchService {
-    enum ModelsKeys: String {
-        case savedModels
-    }
-
-    private let storage: any IStorage<ModelsKeys>
-
     private var clockTimer: Timer?
     private var suspendDate: Date?
 
     @Published
     private(set) var countingModel = TimeCountingModel()
 
+    weak var delegate: IStopwatchDelegate?
+
     @Published
     var state: StopWatchState = .stopped
     @Published
     var timerActive: TimerType = .none
-    @Published
-    var models: [TimeCountingModel]
-
-    init(storage: any IStorage<ModelsKeys> = DefaultsStorage<ModelsKeys>()) {
-        self.storage = storage
-        let tries: [Try]? = storage.retrieve(key: .savedModels)
-        models = tries?.map {
-            TimeCountingModel(id: $0.id, intervals: $0.intervals)
-        } ?? []
-    }
 
     func start() {
         state = .running
@@ -86,13 +66,7 @@ final class StopwatchService: ObservableObject, IStopwatchService {
         clockTimer?.invalidate()
         if hasStarted {
             countingModel.cutTimeStamp()
-            models.append(countingModel)
-            storage.save(
-                models.map {
-                    Try(id: $0.id, intervals: $0.intervals)
-                },
-                key: .savedModels
-            )
+            delegate?.didFinishCountingModel(countingModel)
         }
         countingModel = .init()
     }
@@ -109,18 +83,6 @@ final class StopwatchService: ObservableObject, IStopwatchService {
         countingModel.cutTimeStamp()
         configureTimer(for: timer)
         timerActive = timer
-    }
-
-    func remove(at offsets: IndexSet) {
-        models.remove(atOffsets: offsets)
-        let tries = [Try]()
-        storage.save(tries, key: .savedModels)
-        storage.save(
-            models.map {
-                Try(id: $0.id, intervals: $0.intervals)
-            },
-            key: .savedModels
-        )
     }
 
     private func configureTimer(for type: TimerType) {
