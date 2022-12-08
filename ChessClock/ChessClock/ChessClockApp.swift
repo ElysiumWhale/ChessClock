@@ -4,10 +4,7 @@ import SwiftUI
 struct ChessClockApp: App {
     @Environment(\.scenePhase) private var scenePhase
 
-    private let mainDependency = ChessClockDependency(
-        stopwatchService: StopwatchService(),
-        settingsService: SettingsService()
-    )
+    private let mainDependency = ChessClockDependency.makeDefault()
 
     var body: some Scene {
         WindowGroup {
