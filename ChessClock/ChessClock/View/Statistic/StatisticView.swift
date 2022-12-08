@@ -1,8 +1,8 @@
 import SwiftUI
 
-struct StatisticView<TStopwatch: IStopwatchService, TSettings: ISettingsService>: View {
+struct StatisticView<TDataSource: IDataSource, TSettings: ISettingsService>: View {
     @ObservedObject
-    private var manager: TStopwatch
+    private var dataSource: TDataSource
 
     @ObservedObject
     private var settingsService: TSettings
@@ -10,21 +10,21 @@ struct StatisticView<TStopwatch: IStopwatchService, TSettings: ISettingsService>
     var body: some View {
         NavigationView {
             List {
-                ForEach(manager.models) { model in
+                ForEach(dataSource.models) { model in
                     StatisticCellView(
                         model: model,
                         workColor: workColor,
                         restColor: restColor
                     )
                 }
-                .onDelete(perform: manager.remove)
+                .onDelete(perform: dataSource.remove)
             }
             .navigationTitle("Stats")
         }
     }
 
-    init(manager: TStopwatch, settingsService: TSettings) {
-        self.manager = manager
+    init(dataSource: TDataSource, settingsService: TSettings) {
+        self.dataSource = dataSource
         self.settingsService = settingsService
     }
 }
@@ -40,27 +40,35 @@ private extension StatisticView {
 }
 
 struct StatisticView_Previews: PreviewProvider {
-    static let manager: StopwatchService = {
-        let manager = StopwatchService()
+    static let manager: DataSource = {
+        let dataSource = DataSource()
 
-        manager.models.append(.init(intervals: [
-            .init(timeType: .work, minutes: 1),
-            .init(timeType: .rest, seconds: 20),
-            .init(timeType: .work, seconds: 38)
-        ]))
+        dataSource.models.append(.init(
+            id: UUID(),
+            startDate: Date(),
+            intervals: [
+                .init(timeType: .work, minutes: 1),
+                .init(timeType: .rest, seconds: 20),
+                .init(timeType: .work, seconds: 38)
+            ]
+        ))
+        
+        dataSource.models.append(.init(
+            id: UUID(),
+            startDate: Date(),
+            intervals: [
+                .init(timeType: .work, minutes: 11),
+                .init(timeType: .rest, seconds: 22),
+                .init(timeType: .work, onlySeconds: 333)
+            ]
+        ))
 
-        manager.models.append(.init(intervals: [
-            .init(timeType: .work, minutes: 11),
-            .init(timeType: .rest, seconds: 22),
-            .init(timeType: .work, onlySeconds: 333)
-        ]))
-
-        return manager
+        return dataSource
     }()
 
     static var previews: some View {
         StatisticView(
-            manager: manager,
+            dataSource: manager,
             settingsService: SettingsService()
         )
     }

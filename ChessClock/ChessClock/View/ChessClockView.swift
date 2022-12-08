@@ -17,7 +17,7 @@ struct ChessClockView<Dependency: IChessClockDependency>: View {
             }
 
             StatisticView(
-                manager: dependency.stopwatchService,
+                dataSource: dependency.dataSource,
                 settingsService: dependency.settingsService
             )
             .tabItem {
