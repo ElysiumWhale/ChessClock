@@ -30,3 +30,11 @@ final class TimeCounter: ObservableObject {
             : 0
     }
 }
+
+extension TimeCounter {
+    static func withTime(_ time: UInt) -> TimeCounter {
+        let counter = TimeCounter()
+        counter.currentTime = time
+        return counter
+    }
+}
