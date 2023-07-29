@@ -19,9 +19,10 @@ struct TimerButtonView<TStopwatch: IStopwatchService>: View {
                     action: isRunning ? manager.pause : manager.start,
                     color: isRunning ? Color(.systemYellow) : Color(.systemGreen)
                 )
+                .transition(.scale)
             }
         }
-        .animation(.easeIn, value: !isStopped)
+        .animation(.easeIn, value: [isStopped, isRunning])
     }
 }
 

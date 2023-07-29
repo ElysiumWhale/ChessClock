@@ -64,6 +64,5 @@ struct NeumorphicButtonStyle: ButtonStyle {
             )
             .scaleEffect(configuration.isPressed ? 0.95: 1)
             .foregroundColor(.primary)
-            .animation(.easeInOut)
     }
 }
