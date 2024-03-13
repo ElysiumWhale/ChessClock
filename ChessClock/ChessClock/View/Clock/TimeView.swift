@@ -17,10 +17,10 @@ struct TimeView: View {
             Text("\(counter.seconds)s")
                 .timeStyle()
         }
-        .foregroundColor(.white)
+        .foregroundColor(.secondary)
         .padding(10)
         .background(
-            .secondary,
+            .thickMaterial,
             in: RoundedRectangle(cornerRadius: 15)
         )
         .animation(.bouncy, value: counter.currentTime)
