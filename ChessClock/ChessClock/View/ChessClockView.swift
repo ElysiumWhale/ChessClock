@@ -2,7 +2,7 @@ import SwiftUI
 import SFSafeSymbols
 
 struct ChessClockView<Dependency: IChessClockDependency>: View {
-    @State
+    @ObservedObject
     private var dependency: Dependency
 
     var body: some View {
@@ -33,7 +33,7 @@ struct ChessClockView<Dependency: IChessClockDependency>: View {
                 Text("Settings")
             }
         }
-        .accentColor(dependency.settingsService.restColor)
+        .tint(Color(ColorResource.Colors.lightBlue))
     }
 
     init(dependency: Dependency) {
