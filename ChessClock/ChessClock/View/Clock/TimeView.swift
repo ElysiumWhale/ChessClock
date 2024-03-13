@@ -18,12 +18,12 @@ struct TimeView: View {
                 .timeStyle()
         }
         .foregroundColor(.white)
-        .background {
-            Color(.black)
-                .opacity(0.4)
-                .cornerRadius(15)
-                .padding(-10)
-        }
+        .padding(10)
+        .background(
+            .secondary,
+            in: RoundedRectangle(cornerRadius: 15)
+        )
+        .animation(.bouncy, value: counter.currentTime)
     }
 }
 
@@ -38,14 +38,9 @@ struct TimeView_Previews: PreviewProvider {
 }
 
 extension Text {
-    func timeStyle() -> Text {
-        if #available(iOS 15.0, *) {
-            return font(.system(.largeTitle, design: .rounded))
-                .fontWeight(.bold)
-                .monospacedDigit()
-        } else {
-            return font(.system(.largeTitle, design: .rounded))
-                .fontWeight(.bold)
-        }
+    func timeStyle() -> some View {
+        font(.system(.largeTitle, design: .rounded))
+            .fontWeight(.bold)
+            .monospacedDigit()
     }
 }

@@ -8,36 +8,36 @@ struct ClockView<TStopwatch: IStopwatchService, TSettings: ISettingsService>: Vi
     private var settingsService: TSettings
 
     var body: some View {
-        ZStack {
-            VStack(spacing: .zero) {
-                settingsService.workColor
-                    .ignoresSafeArea(edges: .top)
-                settingsService.restColor
-            }
+        VStack(spacing: .zero) {
+            settingsService.workColor
+                .ignoresSafeArea(edges: .top)
+                .onTapGesture {
+                    manager.switchTimer(to: .work)
+                }
+            settingsService.restColor
+                .onTapGesture {
+                    manager.switchTimer(to: .rest)
+                }
+        }
+        .overlay {
             VStack {
                 TimeView(counter: manager.countingModel.workTime)
+                    .frame(maxHeight: .infinity)
+                    .allowsHitTesting(false)
                     .scaleEffect(
                         manager.timerActive == .work ? 1.3 : 1,
                         anchor: .center
                     )
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .contentShape(Rectangle())
-                    .animation(.easeInOut, value: manager.timerActive == .work)
-                    .onTapGesture {
-                        manager.switchTimer(to: .work)
-                    }
+                    .animation(.bouncy, value: manager.timerActive == .work)
                 TimerButtonView(manager: manager)
                 TimeView(counter: manager.countingModel.restTime)
+                    .frame(maxHeight: .infinity)
+                    .allowsHitTesting(false)
                     .scaleEffect(
                         manager.timerActive == .rest ? 1.3 : 1,
                         anchor: .center
                     )
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .contentShape(Rectangle())
-                    .animation(.easeInOut, value: manager.timerActive == .rest)
-                    .onTapGesture {
-                        manager.switchTimer(to: .rest)
-                    }
+                    .animation(.bouncy, value: manager.timerActive == .rest)
             }
         }
     }
