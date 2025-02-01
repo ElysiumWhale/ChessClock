@@ -1,7 +1,6 @@
 import Foundation
 import SwiftUI
 
-@main
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions:

@@ -7,34 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1482CE6128D7AFF60094B4B6 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 1482CE6028D7AFF60094B4B6 /* SFSafeSymbols */; };
-		1482CE6328D7B53B0094B4B6 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1482CE6228D7B53B0094B4B6 /* TimeView.swift */; };
-		A70F7D802942A544003854F1 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70F7D7F2942A544003854F1 /* DataSource.swift */; };
-		A70F7D822942B04E003854F1 /* TimeTry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70F7D812942B04E003854F1 /* TimeTry.swift */; };
 		A724F53428FCBA9E00B9C5CC /* TimeCountingModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */; };
 		A724F53B28FCC54600B9C5CC /* TimeStampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */; };
-		A724F53F28FCC9D000B9C5CC /* StatisticCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */; };
-		A739758229132E08009ECFA0 /* DefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A739758129132E08009ECFA0 /* DefaultsStorage.swift */; };
 		A7516D4A2915BEC800AD80AD /* DefaultsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7516D492915BEC800AD80AD /* DefaultsStorageTests.swift */; };
-		A7516D4C2915C77F00AD80AD /* DefaultsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7516D4B2915C77F00AD80AD /* DefaultsContainer.swift */; };
-		A76142422559C23E00E8D54F /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76142412559C23E00E8D54F /* ClockView.swift */; };
-		A768380B2559E0860017E669 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768380A2559E0860017E669 /* TimerButton.swift */; };
-		A76838132559E5CD0017E669 /* StopwatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76838122559E5CD0017E669 /* StopwatchService.swift */; };
-		A776147A256B336400846DAB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761479256B336400846DAB /* SettingsView.swift */; };
-		A7761481256B33A200846DAB /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7761480256B33A200846DAB /* StatisticView.swift */; };
-		A77957DE28FB6B0F00AF5057 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77957DD28FB6B0F00AF5057 /* TimeStamp.swift */; };
-		A77957E128FB728500AF5057 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77957E028FB728500AF5057 /* TimeCounter.swift */; };
-		A77CFF912911EE180029B070 /* ChessClockDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CFF902911EE180029B070 /* ChessClockDependency.swift */; };
-		A77F750E257D15B800A86058 /* TimerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F750D257D15B800A86058 /* TimerButtonView.swift */; };
-		A79E933C2915ABE4005E47A1 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79E933B2915ABE4005E47A1 /* Color+Codable.swift */; };
-		A7A08600255CACF600807225 /* TimeCountingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A085FF255CACF600807225 /* TimeCountingModel.swift */; };
-		A7A08606255CB22D00807225 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A08605255CB22D00807225 /* SettingsService.swift */; };
-		A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DD62554A83800A44984 /* ChessClockApp.swift */; };
-		A7A72DD92554A83800A44984 /* ChessClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72DD82554A83800A44984 /* ChessClockView.swift */; };
-		A7A72DDB2554A83B00A44984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A72DDA2554A83B00A44984 /* Assets.xcassets */; };
-		A7A72DDE2554A83B00A44984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A72DDD2554A83B00A44984 /* Preview Assets.xcassets */; };
 		A7A72E0C25560A7800A44984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A72E0B25560A7800A44984 /* AppDelegate.swift */; };
-		A7A9235928DBCEB8002783F0 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9235828DBCEB8002783F0 /* DateFormatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,36 +24,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1482CE6228D7B53B0094B4B6 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
-		A70F7D7F2942A544003854F1 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		A70F7D812942B04E003854F1 /* TimeTry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTry.swift; sourceTree = "<group>"; };
 		A724F53128FCBA9E00B9C5CC /* ChessClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A724F53328FCBA9E00B9C5CC /* TimeCountingModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCountingModelTests.swift; sourceTree = "<group>"; };
 		A724F53A28FCC54600B9C5CC /* TimeStampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampTests.swift; sourceTree = "<group>"; };
-		A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCellView.swift; sourceTree = "<group>"; };
-		A739758129132E08009ECFA0 /* DefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorage.swift; sourceTree = "<group>"; };
 		A7516D492915BEC800AD80AD /* DefaultsStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorageTests.swift; sourceTree = "<group>"; };
-		A7516D4B2915C77F00AD80AD /* DefaultsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsContainer.swift; sourceTree = "<group>"; };
-		A76142412559C23E00E8D54F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
-		A768380A2559E0860017E669 /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
-		A76838122559E5CD0017E669 /* StopwatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchService.swift; sourceTree = "<group>"; };
-		A7761479256B336400846DAB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		A7761480256B33A200846DAB /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
-		A77957DD28FB6B0F00AF5057 /* TimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
-		A77957E028FB728500AF5057 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
-		A77CFF902911EE180029B070 /* ChessClockDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockDependency.swift; sourceTree = "<group>"; };
-		A77F750D257D15B800A86058 /* TimerButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButtonView.swift; sourceTree = "<group>"; };
-		A79E933B2915ABE4005E47A1 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
-		A7A085FF255CACF600807225 /* TimeCountingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCountingModel.swift; sourceTree = "<group>"; };
-		A7A08605255CB22D00807225 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		A75F13242D4E63DF0075C7C6 /* ChessClock.swiftpm */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ChessClock.swiftpm; sourceTree = "<group>"; };
 		A7A72DD32554A83800A44984 /* ChessClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7A72DD62554A83800A44984 /* ChessClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockApp.swift; sourceTree = "<group>"; };
-		A7A72DD82554A83800A44984 /* ChessClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockView.swift; sourceTree = "<group>"; };
-		A7A72DDA2554A83B00A44984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A7A72DDD2554A83B00A44984 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A7A72DDF2554A83B00A44984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7A72E0B25560A7800A44984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7A9235828DBCEB8002783F0 /* DateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1482CE6128D7AFF60094B4B6 /* SFSafeSymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,91 +61,10 @@
 			path = ChessClockTests;
 			sourceTree = "<group>";
 		};
-		A76142372559C11F00E8D54F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A77CFF8F2911EDF00029B070 /* Dependecies */,
-				A7A72DD82554A83800A44984 /* ChessClockView.swift */,
-				A77F7517257D16E200A86058 /* Clock */,
-				A77F7518257D16FE00A86058 /* Statistic */,
-				A77F751A257D173300A86058 /* Settings */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		A76838112559E5A40017E669 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A7A9235828DBCEB8002783F0 /* DateFormatting.swift */,
-				A7A085FF255CACF600807225 /* TimeCountingModel.swift */,
-				A77957E028FB728500AF5057 /* TimeCounter.swift */,
-				A70F7D812942B04E003854F1 /* TimeTry.swift */,
-				A77957DD28FB6B0F00AF5057 /* TimeStamp.swift */,
-				A79E933B2915ABE4005E47A1 /* Color+Codable.swift */,
-				A7516D4B2915C77F00AD80AD /* DefaultsContainer.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A77957DF28FB717200AF5057 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				A76838122559E5CD0017E669 /* StopwatchService.swift */,
-				A7A08605255CB22D00807225 /* SettingsService.swift */,
-				A739758129132E08009ECFA0 /* DefaultsStorage.swift */,
-				A70F7D7F2942A544003854F1 /* DataSource.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		A77CFF8E2911E95A0029B070 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				A77957DF28FB717200AF5057 /* Service */,
-				A76838112559E5A40017E669 /* Model */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		A77CFF8F2911EDF00029B070 /* Dependecies */ = {
-			isa = PBXGroup;
-			children = (
-				A77CFF902911EE180029B070 /* ChessClockDependency.swift */,
-			);
-			path = Dependecies;
-			sourceTree = "<group>";
-		};
-		A77F7517257D16E200A86058 /* Clock */ = {
-			isa = PBXGroup;
-			children = (
-				A76142412559C23E00E8D54F /* ClockView.swift */,
-				1482CE6228D7B53B0094B4B6 /* TimeView.swift */,
-				A77F750D257D15B800A86058 /* TimerButtonView.swift */,
-				A768380A2559E0860017E669 /* TimerButton.swift */,
-			);
-			path = Clock;
-			sourceTree = "<group>";
-		};
-		A77F7518257D16FE00A86058 /* Statistic */ = {
-			isa = PBXGroup;
-			children = (
-				A7761480256B33A200846DAB /* StatisticView.swift */,
-				A724F53E28FCC9D000B9C5CC /* StatisticCellView.swift */,
-			);
-			path = Statistic;
-			sourceTree = "<group>";
-		};
-		A77F751A257D173300A86058 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				A7761479256B336400846DAB /* SettingsView.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
 		A7A72DCA2554A83800A44984 = {
 			isa = PBXGroup;
 			children = (
+				A75F13242D4E63DF0075C7C6 /* ChessClock.swiftpm */,
 				A7A72DD52554A83800A44984 /* ChessClock */,
 				A724F53228FCBA9E00B9C5CC /* ChessClockTests */,
 				A7A72DD42554A83800A44984 /* Products */,
@@ -212,23 +83,9 @@
 		A7A72DD52554A83800A44984 /* ChessClock */ = {
 			isa = PBXGroup;
 			children = (
-				A77CFF8E2911E95A0029B070 /* Core */,
-				A76142372559C11F00E8D54F /* View */,
-				A7A72DD62554A83800A44984 /* ChessClockApp.swift */,
 				A7A72E0B25560A7800A44984 /* AppDelegate.swift */,
-				A7A72DDA2554A83B00A44984 /* Assets.xcassets */,
-				A7A72DDF2554A83B00A44984 /* Info.plist */,
-				A7A72DDC2554A83B00A44984 /* Preview Content */,
 			);
 			path = ChessClock;
-			sourceTree = "<group>";
-		};
-		A7A72DDC2554A83B00A44984 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A7A72DDD2554A83B00A44984 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +123,6 @@
 			);
 			name = ChessClock;
 			packageProductDependencies = (
-				1482CE6028D7AFF60094B4B6 /* SFSafeSymbols */,
 			);
 			productName = ChessClock;
 			productReference = A7A72DD32554A83800A44984 /* ChessClock.app */;
@@ -301,7 +157,6 @@
 			);
 			mainGroup = A7A72DCA2554A83800A44984;
 			packageReferences = (
-				1482CE5F28D7AFF60094B4B6 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
 			);
 			productRefGroup = A7A72DD42554A83800A44984 /* Products */;
 			projectDirPath = "";
@@ -325,8 +180,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7A72DDE2554A83B00A44984 /* Preview Assets.xcassets in Resources */,
-				A7A72DDB2554A83B00A44984 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,28 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A70F7D802942A544003854F1 /* DataSource.swift in Sources */,
 				A7A72E0C25560A7800A44984 /* AppDelegate.swift in Sources */,
-				A7A08600255CACF600807225 /* TimeCountingModel.swift in Sources */,
-				A76838132559E5CD0017E669 /* StopwatchService.swift in Sources */,
-				A77957E128FB728500AF5057 /* TimeCounter.swift in Sources */,
-				A79E933C2915ABE4005E47A1 /* Color+Codable.swift in Sources */,
-				A7516D4C2915C77F00AD80AD /* DefaultsContainer.swift in Sources */,
-				A76142422559C23E00E8D54F /* ClockView.swift in Sources */,
-				A724F53F28FCC9D000B9C5CC /* StatisticCellView.swift in Sources */,
-				A7A08606255CB22D00807225 /* SettingsService.swift in Sources */,
-				A776147A256B336400846DAB /* SettingsView.swift in Sources */,
-				A7A72DD92554A83800A44984 /* ChessClockView.swift in Sources */,
-				A77CFF912911EE180029B070 /* ChessClockDependency.swift in Sources */,
-				A768380B2559E0860017E669 /* TimerButton.swift in Sources */,
-				A7A9235928DBCEB8002783F0 /* DateFormatting.swift in Sources */,
-				A7761481256B33A200846DAB /* StatisticView.swift in Sources */,
-				A70F7D822942B04E003854F1 /* TimeTry.swift in Sources */,
-				A77957DE28FB6B0F00AF5057 /* TimeStamp.swift in Sources */,
-				A77F750E257D15B800A86058 /* TimerButtonView.swift in Sources */,
-				A7A72DD72554A83800A44984 /* ChessClockApp.swift in Sources */,
-				1482CE6328D7B53B0094B4B6 /* TimeView.swift in Sources */,
-				A739758229132E08009ECFA0 /* DefaultsStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,10 +381,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ChessClock/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 235K7U278B;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ChessClock/Info.plist;
+				INFOPLIST_FILE = ChessClock.swiftpm/ChessClock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -571,10 +403,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ChessClock/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 235K7U278B;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ChessClock/Info.plist;
+				INFOPLIST_FILE = ChessClock.swiftpm/ChessClock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -618,25 +450,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1482CE5F28D7AFF60094B4B6 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SFSafeSymbols/SFSafeSymbols";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1482CE6028D7AFF60094B4B6 /* SFSafeSymbols */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1482CE5F28D7AFF60094B4B6 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
-			productName = SFSafeSymbols;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A7A72DCB2554A83800A44984 /* Project object */;
 }
