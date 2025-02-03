@@ -10,8 +10,8 @@ struct ChessClockApp: App {
         WindowGroup {
             ChessClockView(dependency: mainDependency)
         }
-        .onChange(of: scenePhase) { newScenePhase in
-            switch newScenePhase {
+        .onChange(of: scenePhase) {
+            switch scenePhase {
             case .active:
                 mainDependency.stopwatchService.revive()
             case .background:

@@ -1,5 +1,4 @@
 import SwiftUI
-import SFSafeSymbols
 
 struct ChessClockView<Dependency: IChessClockDependency>: View {
     @ObservedObject
@@ -12,7 +11,7 @@ struct ChessClockView<Dependency: IChessClockDependency>: View {
                 settingsService: dependency.settingsService
             )
             .tabItem {
-                Image(systemSymbol: .clock)
+                Image(systemName: "clock")
                 Text("Clock")
             }
 
@@ -21,7 +20,7 @@ struct ChessClockView<Dependency: IChessClockDependency>: View {
                 settingsService: dependency.settingsService
             )
             .tabItem {
-                Image(systemSymbol: .bolt)
+                Image(systemName: "bolt")
                 Text("Stats")
             }
 
@@ -29,11 +28,11 @@ struct ChessClockView<Dependency: IChessClockDependency>: View {
                 settingsService: dependency.settingsService
             )
             .tabItem {
-                Image(systemSymbol: .gear)
+                Image(systemName: "gear")
                 Text("Settings")
             }
         }
-        .tint(Color(ColorResource.Colors.lightBlue))
+        .tint(.indigo)
     }
 
     init(dependency: Dependency) {

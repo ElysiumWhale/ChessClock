@@ -35,14 +35,10 @@ let package = Package(
             appCategory: .productivity
         )
     ],
-    dependencies: [
-        .package(url: "https://github.com/SFSafeSymbols/SFSafeSymbols", "5.3.0"..<"6.0.0")
-    ],
     targets: [
         .executableTarget(
             name: "AppModule",
             dependencies: [
-                .product(name: "SFSafeSymbols", package: "sfsafesymbols")
             ],
             path: ".",
             swiftSettings: [
